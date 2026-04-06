@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:1cproconsulting.ru)",
+      "Bash(wc -l \"c:/Users/bahti/Documents/1С ЗАКАЗ/\"*.html \"c:/Users/bahti/Documents/1С ЗАКАЗ/\"*.css \"c:/Users/bahti/Documents/1С ЗАКАЗ/\"*.js)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/projects.html)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8766/index.html)",
+      "mcp__plugin_playwright_playwright__browser_close",
+      "Bash(npx -y http-server -p 8181 --silent)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8181/index.html)"
+    ]
+  },
+  "enabledPlugins": {
+    "serena@claude-plugins-official": true
+  }
+}

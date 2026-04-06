@@ -1,0 +1,166 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "АП АверсПро" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: АП
+        - generic [ref=e6]: АверсПро
+      - button "Меню" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Услуги
+      - heading "1С:Зарплата и управление персоналом" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Помогаем наладить расчёт зарплаты, кадровый учёт и отчётность для компаний с численностью до 2000 сотрудников
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - img [ref=e21]
+        - generic [ref=e25]:
+          - heading "Полный цикл поддержки 1С:ЗУП" [level=2] [ref=e26]
+          - paragraph [ref=e27]: "Берём на себя настройку, сопровождение и решение сложных задач в 1С:Зарплата и управление персоналом. Работаем с базами любого масштаба — от 10 до 2000 сотрудников. Помогаем на каждом этапе: от первичной настройки до сдачи отчётности."
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: 200+
+          - generic [ref=e31]: организаций на обслуживании
+        - generic [ref=e32]:
+          - generic [ref=e33]: с 1999
+          - generic [ref=e34]: года работаем с ЗУП
+        - generic [ref=e35]:
+          - generic [ref=e36]: "2000"
+          - generic [ref=e37]: сотрудников — макс. масштаб базы
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Настройка начислений" [level=4] [ref=e43]
+          - paragraph [ref=e44]: Оклады, премии, доплаты, районные коэффициенты, сложные схемы расчёта — настроим типовыми средствами.
+        - generic [ref=e45]:
+          - img [ref=e47]
+          - heading "Отчётность" [level=4] [ref=e50]
+          - paragraph [ref=e51]: 6-НДФЛ, РСВ, ЕФС-1, персонифицированные сведения — автоматическое формирование и проверка.
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - heading "Переход на ЗУП" [level=4] [ref=e57]
+          - paragraph [ref=e58]: "Переход с УПП, 7.7 и других программ. Перенос исторических данных: начисления, средний заработок, остатки отпусков."
+        - generic [ref=e59]:
+          - img [ref=e61]
+          - heading "Корректировка НДФЛ" [level=4] [ref=e63]
+          - paragraph [ref=e64]: Исправление ошибок по НДФЛ и взносам, в том числе за прошлые периоды. Помощь при требованиях ФНС.
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: Подробнее
+        - heading "Что входит в услугу" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - button "Какие задачи решаются" [ref=e72] [cursor=pointer]:
+            - text: Какие задачи решаются
+            - img [ref=e73]
+          - list [ref=e75]:
+            - listitem [ref=e76]: Настройка видов начислений и удержаний (оклады, премии, доплаты, районные коэффициенты)
+            - listitem [ref=e77]: Корректировка ошибок по НДФЛ и взносам (в том числе за прошлые периоды)
+            - listitem [ref=e78]: Настройка обмена с 1С:Бухгалтерией для автоматического отражения зарплаты в расходах
+            - listitem [ref=e79]: Помощь на любом этапе от первички до формирования 6-НДФЛ, РСВ, ЕФС-1, персонифицированных сведений
+            - listitem [ref=e80]: Переход на ЗУП с других программ с переносом исторических данных (начисления, средний заработок, остатки отпусков)
+        - generic [ref=e81]:
+          - button "Что вы получите" [ref=e82] [cursor=pointer]:
+            - text: Что вы получите
+            - img [ref=e83]
+          - list [ref=e85]:
+            - listitem [ref=e86]: Расчёт зарплаты без ручных корректировок ускоряется более чем в 2 раза
+            - listitem [ref=e87]: Перерасчёты снижаются более чем в 3 раза
+            - listitem [ref=e88]: Автоматическое формирование отчётности (6-НДФЛ, РСВ, ЕФС-1, персонифицированные сведения)
+            - listitem [ref=e89]: Полное понимание принципов расчётов
+            - listitem [ref=e90]: Помощь в ответах на требования, запросы, аудиторские заключения
+        - generic [ref=e91]:
+          - button "Почему это надёжно" [ref=e92] [cursor=pointer]:
+            - text: Почему это надёжно
+            - img [ref=e93]
+          - list [ref=e95]:
+            - listitem [ref=e96]: Опыт работы с ЗУП с 1999 года
+            - listitem [ref=e97]: На обслуживании 200+ организаций с численностью от 10 до 2000 человек
+            - listitem [ref=e98]: В штате — сертифицированные специалисты по расчёту зарплаты с опытом работы главным бухгалтером
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - heading "Нужна помощь с расчётом зарплаты?" [level=2] [ref=e103]
+        - paragraph [ref=e104]: Расскажите о вашей задаче — мы оценим сроки и предложим решение. Первая консультация бесплатная.
+        - generic [ref=e105]:
+          - img [ref=e107]
+          - paragraph [ref=e110]: Скачайте памятку по расчёту зарплаты — бесплатно при заявке
+        - generic [ref=e111]:
+          - link "+7 (900) 123-45-67" [ref=e112] [cursor=pointer]:
+            - /url: tel:+79001234567
+          - link "info@averspro.ru" [ref=e113] [cursor=pointer]:
+            - /url: mailto:info@averspro.ru
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: Имя
+          - textbox "Имя" [ref=e117]:
+            - /placeholder: Ваше имя
+        - generic [ref=e118]:
+          - generic [ref=e119]: Телефон
+          - textbox "Телефон" [ref=e120]:
+            - /placeholder: +7 (___) ___-__-__
+        - generic [ref=e121]:
+          - generic [ref=e122]: Email
+          - textbox "Email" [ref=e123]:
+            - /placeholder: email@example.com
+        - generic [ref=e124]:
+          - checkbox "Согласен на обработку персональных данных" [checked] [ref=e125]
+          - generic [ref=e126]: Согласен на обработку персональных данных
+        - button "Отправить заявку" [ref=e127] [cursor=pointer]
+  - contentinfo [ref=e128]:
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e133]: АП
+            - text: АверсПро
+          - paragraph [ref=e134]: Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.
+          - generic [ref=e135]:
+            - link "Telegram" [ref=e136] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e137]
+            - link "WhatsApp" [ref=e139] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e140]
+        - generic [ref=e142]:
+          - heading "Навигация" [level=4] [ref=e143]
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - link "Главная" [ref=e146] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e147]:
+              - link "Проекты" [ref=e148] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e149]:
+              - link "Блог" [ref=e150] [cursor=pointer]:
+                - /url: blog.html
+            - listitem [ref=e151]:
+              - link "Контакты" [ref=e152] [cursor=pointer]:
+                - /url: contacts.html
+        - generic [ref=e153]:
+          - heading "Услуги" [level=4] [ref=e154]
+          - list [ref=e155]:
+            - listitem [ref=e156]:
+              - link "1С:ЗУП" [ref=e157] [cursor=pointer]:
+                - /url: services-zup.html
+            - listitem [ref=e158]:
+              - link "1С:Бухгалтерия" [ref=e159] [cursor=pointer]:
+                - /url: services-buh.html
+            - listitem [ref=e160]:
+              - link "ЖКХ и НКО" [ref=e161] [cursor=pointer]:
+                - /url: services-gkh-nko.html
+            - listitem [ref=e162]:
+              - link "Другие решения" [ref=e163] [cursor=pointer]:
+                - /url: services-other.html
+        - generic [ref=e164]:
+          - heading "Контакты" [level=4] [ref=e165]
+          - paragraph [ref=e166]:
+            - link "+7 (900) 123-45-67" [ref=e167] [cursor=pointer]:
+              - /url: tel:+79001234567
+          - paragraph [ref=e168]:
+            - link "info@averspro.ru" [ref=e169] [cursor=pointer]:
+              - /url: mailto:info@averspro.ru
+          - paragraph [ref=e170]: г. Москва
+          - paragraph [ref=e171]: "Пн–Пт: 9:00 – 18:00"
+      - paragraph [ref=e173]: © 2025 АверсПро. Все права защищены.
+  - generic [ref=e174]:
+    - paragraph

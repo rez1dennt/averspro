@@ -1,0 +1,179 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "АП АверсПро" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: АП
+        - generic [ref=e6]: АверсПро
+      - button "Меню" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Услуги
+      - heading "Другие решения 1С" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Объединение баз, миграции между версиями, 1С:Розница и индивидуальные доработки
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e22]
+        - heading "Объединение баз" [level=3] [ref=e27]
+        - paragraph [ref=e28]: Объединяем от 3 до 50+ юрлиц в одну базу. Устраняем дубли, приводим аналитику к единому формату. Сроки от 4 дней.
+      - generic [ref=e29]:
+        - img [ref=e31]
+        - heading "Миграции и переходы" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Переходы с УПП, 7.7, нетиповых конфигураций на современные решения. Перенос исторических данных, настройка интеграций.
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - heading "1С:Розница" [level=3] [ref=e44]
+        - paragraph [ref=e45]: Настройка розничного учёта, подключение торгового оборудования, интеграция с 1С:Бухгалтерией.
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Подробнее
+        - heading "Объединение баз 1С" [level=2] [ref=e50]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: 50+
+          - generic [ref=e54]: юрлиц в одной базе — наш рекорд
+        - generic [ref=e55]:
+          - generic [ref=e56]: 4 дня
+          - generic [ref=e57]: минимальный срок объединения
+        - generic [ref=e58]:
+          - generic [ref=e59]: "158"
+          - generic [ref=e60]: организаций объединено за всё время
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - button "Как проходит объединение" [ref=e63] [cursor=pointer]:
+            - text: Как проходит объединение
+            - img [ref=e64]
+          - list [ref=e66]:
+            - listitem [ref=e67]: Анализ структуры баз и выявление дублей
+            - listitem [ref=e68]: Приведение справочников к единому формату (контрагенты, номенклатура, сотрудники)
+            - listitem [ref=e69]: Перенос документов с сохранением проводок и истории
+            - listitem [ref=e70]: Проверка корректности остатков и оборотов после объединения
+            - listitem [ref=e71]: Обучение сотрудников работе в единой базе
+        - generic [ref=e72]:
+          - button "Какие конфигурации объединяем" [ref=e73] [cursor=pointer]:
+            - text: Какие конфигурации объединяем
+            - img [ref=e74]
+          - list [ref=e76]:
+            - listitem [ref=e77]: 1С:Бухгалтерия (базовая, ПРОФ, КОРП)
+            - listitem [ref=e78]: 1С:Зарплата и управление персоналом
+            - listitem [ref=e79]: 1С:Управление торговлей
+            - listitem [ref=e80]: Нетиповые и доработанные конфигурации
+        - generic [ref=e81]:
+          - button "Миграции и переходы между версиями" [ref=e82] [cursor=pointer]:
+            - text: Миграции и переходы между версиями
+            - img [ref=e83]
+          - list [ref=e85]:
+            - listitem [ref=e86]: Переход с 1С 7.7 на 8.3 (Бухгалтерия, ЗУП, Торговля)
+            - listitem [ref=e87]: Переход с УПП на ERP или Бухгалтерию КОРП
+            - listitem [ref=e88]: Переход с ЗУП 2.5 на ЗУП 3.0 с переносом всей истории
+            - listitem [ref=e89]: Миграция с нетиповых конфигураций на типовые решения
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: Кейсы
+        - heading "Примеры объединений" [level=2] [ref=e94]
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - paragraph [ref=e97]: 38 юрлиц → 1 база
+          - paragraph [ref=e98]: Из 8 баз в одну. Консолидированная отчётность в 3 раза быстрее.
+        - generic [ref=e99]:
+          - paragraph [ref=e100]: 3 базы за 4 дня
+          - paragraph [ref=e101]: Клиент обратился в пятницу — в понедельник работал в единой базе.
+        - generic [ref=e102]:
+          - paragraph [ref=e103]: 50+ юрлиц ЗУП
+          - paragraph [ref=e104]: Объединение при покупке компании за 1 месяц.
+        - generic [ref=e105]:
+          - paragraph [ref=e106]: 12 баз ЗУП
+          - paragraph [ref=e107]: Государственное учреждение после реорганизации.
+        - generic [ref=e108]:
+          - paragraph [ref=e109]: 3 базы за 6 дней
+          - paragraph [ref=e110]: Три разрозненные базы для собственника — все направления в одной базе.
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: 2 нетиповые базы
+          - paragraph [ref=e113]: «Авто-Альфа» — два автосалона объединены без потери истории.
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - heading "Нужна помощь с 1С?" [level=2] [ref=e118]
+        - paragraph [ref=e119]: Расскажите о вашей задаче — мы оценим сроки и предложим решение. Первая консультация бесплатная.
+        - generic [ref=e120]:
+          - img [ref=e122]
+          - paragraph [ref=e125]: Скачайте чек-лист по объединению баз 1С — бесплатно при заявке
+        - generic [ref=e126]:
+          - link "+7 (900) 123-45-67" [ref=e127] [cursor=pointer]:
+            - /url: tel:+79001234567
+          - link "info@averspro.ru" [ref=e128] [cursor=pointer]:
+            - /url: mailto:info@averspro.ru
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]: Имя
+          - textbox "Имя" [ref=e132]:
+            - /placeholder: Ваше имя
+        - generic [ref=e133]:
+          - generic [ref=e134]: Телефон
+          - textbox "Телефон" [ref=e135]:
+            - /placeholder: +7 (___) ___-__-__
+        - generic [ref=e136]:
+          - generic [ref=e137]: Email
+          - textbox "Email" [ref=e138]:
+            - /placeholder: email@example.com
+        - generic [ref=e139]:
+          - checkbox "Согласен на обработку персональных данных" [checked] [ref=e140]
+          - generic [ref=e141]: Согласен на обработку персональных данных
+        - button "Отправить заявку" [ref=e142] [cursor=pointer]
+  - contentinfo [ref=e143]:
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]: АП
+            - text: АверсПро
+          - paragraph [ref=e149]: Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.
+          - generic [ref=e150]:
+            - link "Telegram" [ref=e151] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e152]
+            - link "WhatsApp" [ref=e154] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e155]
+        - generic [ref=e157]:
+          - heading "Навигация" [level=4] [ref=e158]
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Главная" [ref=e161] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e162]:
+              - link "Проекты" [ref=e163] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e164]:
+              - link "Блог" [ref=e165] [cursor=pointer]:
+                - /url: blog.html
+            - listitem [ref=e166]:
+              - link "Контакты" [ref=e167] [cursor=pointer]:
+                - /url: contacts.html
+        - generic [ref=e168]:
+          - heading "Услуги" [level=4] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "1С:ЗУП" [ref=e172] [cursor=pointer]:
+                - /url: services-zup.html
+            - listitem [ref=e173]:
+              - link "1С:Бухгалтерия" [ref=e174] [cursor=pointer]:
+                - /url: services-buh.html
+            - listitem [ref=e175]:
+              - link "ЖКХ и НКО" [ref=e176] [cursor=pointer]:
+                - /url: services-gkh-nko.html
+            - listitem [ref=e177]:
+              - link "Другие решения" [ref=e178] [cursor=pointer]:
+                - /url: services-other.html
+        - generic [ref=e179]:
+          - heading "Контакты" [level=4] [ref=e180]
+          - paragraph [ref=e181]:
+            - link "+7 (900) 123-45-67" [ref=e182] [cursor=pointer]:
+              - /url: tel:+79001234567
+          - paragraph [ref=e183]:
+            - link "info@averspro.ru" [ref=e184] [cursor=pointer]:
+              - /url: mailto:info@averspro.ru
+          - paragraph [ref=e185]: г. Москва
+          - paragraph [ref=e186]: "Пн–Пт: 9:00 – 18:00"
+      - paragraph [ref=e188]: © 2025 АверсПро. Все права защищены.
+  - generic [ref=e189]:
+    - paragraph

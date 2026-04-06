@@ -1,0 +1,263 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "АП АверсПро" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: АП
+        - generic [ref=e6]: АверсПро
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Главная" [ref=e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e11]:
+            - link "Услуги" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+              - text: Услуги
+              - img [ref=e13]
+          - listitem [ref=e15]:
+            - link "Проекты" [ref=e16] [cursor=pointer]:
+              - /url: projects.html
+          - listitem [ref=e17]:
+            - link "Блог" [ref=e18] [cursor=pointer]:
+              - /url: blog.html
+          - listitem [ref=e19]:
+            - link "Контакты" [ref=e20] [cursor=pointer]:
+              - /url: contacts.html
+      - generic [ref=e21]:
+        - link "+7 (900) 123-45-67" [ref=e22] [cursor=pointer]:
+          - /url: tel:+79001234567
+        - link "Оставить заявку" [ref=e23] [cursor=pointer]:
+          - /url: contacts.html
+  - main [ref=e24]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: С 1999 года на рынке 1С
+        - heading "Настройка и поддержка 1С" [level=1] [ref=e31]
+        - paragraph [ref=e32]: "Решаем сложные задачи: ЗУП до 2000 человек, объединение баз, восстановление учёта. На обслуживании 200+ организаций."
+        - generic [ref=e33]:
+          - link "Получить консультацию" [ref=e34] [cursor=pointer]:
+            - /url: contacts.html
+          - link "Наши проекты" [ref=e35] [cursor=pointer]:
+            - /url: projects.html
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - generic [ref=e41]: Сертифицированные специалисты
+          - generic [ref=e42]:
+            - img [ref=e43]
+            - generic [ref=e45]: Типовые решения без доработок
+          - generic [ref=e46]:
+            - img [ref=e47]
+            - generic [ref=e52]: Клиенты с нами более 20 лет
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: 200+
+            - generic [ref=e57]: организаций на обслуживании
+          - generic [ref=e58]:
+            - generic [ref=e59]: "25"
+            - generic [ref=e60]: лет на рынке 1С
+          - generic [ref=e61]:
+            - generic [ref=e62]: 2 000
+            - generic [ref=e63]: сотрудников — макс. ЗУП проект
+          - generic [ref=e64]:
+            - generic [ref=e65]: 50+
+            - generic [ref=e66]: юрлиц объединено в одну базу
+        - generic [ref=e67]:
+          - blockquote [ref=e68]: «Снижение времени расчёта зарплаты в 5 раз, подготовки ведомостей — в 4 раза, перерасчётов — в 10 раз»
+          - paragraph [ref=e69]: Кузьмина О.С., главный бухгалтер МУП «Астрводоканал»
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: Услуги
+        - heading "Чем мы помогаем" [level=2] [ref=e74]
+      - generic [ref=e75]:
+        - link "Зарплата и управление персоналом Расчёт зарплаты, кадровый учёт и отчётность для компаний до 2000 сотрудников Подробнее →" [ref=e76] [cursor=pointer]:
+          - /url: services-zup.html
+          - img [ref=e78]
+          - heading "Зарплата и управление персоналом" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Расчёт зарплаты, кадровый учёт и отчётность для компаний до 2000 сотрудников
+          - generic [ref=e84]: Подробнее →
+        - link "Бухгалтерия и налоговый учёт Учёт, закрытие периода и подготовка отчётности для ОСНО, УСН, ЕСХН Подробнее →" [ref=e85] [cursor=pointer]:
+          - /url: services-buh.html
+          - img [ref=e87]
+          - heading "Бухгалтерия и налоговый учёт" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Учёт, закрытие периода и подготовка отчётности для ОСНО, УСН, ЕСХН
+          - generic [ref=e94]: Подробнее →
+        - link "1С для ЖКХ и НКО Расчёты с населением, субсидии, целевые средства, гранты Подробнее →" [ref=e95] [cursor=pointer]:
+          - /url: services-gkh-nko.html
+          - img [ref=e97]
+          - heading "1С для ЖКХ и НКО" [level=3] [ref=e101]
+          - paragraph [ref=e102]: Расчёты с населением, субсидии, целевые средства, гранты
+          - generic [ref=e103]: Подробнее →
+        - link "Другие решения 1С:Розница, объединение баз, миграции, индивидуальные доработки Подробнее →" [ref=e104] [cursor=pointer]:
+          - /url: services-other.html
+          - img [ref=e106]
+          - heading "Другие решения" [level=3] [ref=e109]
+          - paragraph [ref=e110]: 1С:Розница, объединение баз, миграции, индивидуальные доработки
+          - generic [ref=e111]: Подробнее →
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - text: 0+
+        - generic [ref=e116]: организаций на обслуживании
+      - generic [ref=e117]:
+        - text: "0"
+        - generic [ref=e118]: лет на рынке 1С
+      - generic [ref=e119]:
+        - text: "0"
+        - generic [ref=e120]: сотрудников — макс. ЗУП
+      - generic [ref=e121]:
+        - text: 0+
+        - generic [ref=e122]: юрлиц объединено в базу
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - paragraph [ref=e126]: Кейсы
+        - heading "Ключевые проекты" [level=2] [ref=e127]
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]: ЗУП · 2000 сотрудников
+          - heading "Переход на ЗУП для 2000 сотрудников" [level=3] [ref=e131]
+          - paragraph [ref=e132]: МУП «Астрводоканал»
+          - paragraph [ref=e133]:
+            - strong [ref=e134]: "Задача:"
+            - text: Перейти с УПП на современную ЗУП. Разрозненные данные, ошибки в НДФЛ, долгий расчёт зарплаты.
+          - paragraph [ref=e135]:
+            - strong [ref=e136]: "Результат:"
+            - text: Расчёт зарплаты ускорился
+            - strong [ref=e137]: в 5 раз
+            - text: ", ведомости —"
+            - strong [ref=e138]: в 4 раза
+            - text: быстрее, перерасчёты снизились
+            - strong [ref=e139]: в 10 раз
+            - text: .
+          - link "Читать кейс →" [ref=e140] [cursor=pointer]:
+            - /url: projects.html
+        - generic [ref=e141]:
+          - generic [ref=e142]: Объединение баз
+          - heading "38 юрлиц из 8 баз — в одну" [level=3] [ref=e143]
+          - paragraph [ref=e144]: Группа компаний
+          - paragraph [ref=e145]:
+            - strong [ref=e146]: "Задача:"
+            - text: Консолидировать учёт из 8 разрозненных баз. Дубли контрагентов, разная аналитика, битые ссылки.
+          - paragraph [ref=e147]:
+            - strong [ref=e148]: "Результат:"
+            - text: Единая база, консолидированная отчётность формируется
+            - strong [ref=e149]: в 3 раза быстрее
+            - text: .
+          - link "Читать кейс →" [ref=e150] [cursor=pointer]:
+            - /url: projects.html
+      - link "Все проекты" [ref=e152] [cursor=pointer]:
+        - /url: projects.html
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - heading "Получите бесплатную консультацию" [level=2] [ref=e157]
+        - paragraph [ref=e158]: Расскажите о вашей задаче — мы подберём решение и оценим сроки. Первая консультация бесплатная.
+        - generic [ref=e159]:
+          - img [ref=e161]
+          - paragraph [ref=e164]: Скачайте памятку по расчёту зарплаты — бесплатно при заявке
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]: Имя
+          - textbox "Имя" [ref=e168]:
+            - /placeholder: Ваше имя
+        - generic [ref=e169]:
+          - generic [ref=e170]: Телефон
+          - textbox "Телефон" [ref=e171]:
+            - /placeholder: +7 (___) ___-__-__
+        - generic [ref=e172]:
+          - generic [ref=e173]: Email
+          - textbox "Email" [ref=e174]:
+            - /placeholder: email@example.com
+        - generic [ref=e175]:
+          - checkbox "Согласен на обработку персональных данных" [checked] [ref=e176]
+          - generic [ref=e177]: Согласен на обработку персональных данных
+        - button "Отправить заявку" [ref=e178] [cursor=pointer]
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - paragraph [ref=e182]: Блог
+        - heading "Последние публикации" [level=2] [ref=e183]
+      - generic [ref=e184]:
+        - article [ref=e185] [cursor=pointer]:
+          - generic [ref=e186]:
+            - generic [ref=e187]: 15 марта 2026
+            - generic [ref=e188]: ЗУП
+          - heading "5 типичных ошибок при расчёте НДФЛ в ЗУП 3.0" [level=3] [ref=e189]
+          - paragraph [ref=e190]: Разбираем самые частые проблемы и показываем, как их избежать стандартными средствами.
+          - link "Читать" [ref=e191]:
+            - /url: "#"
+        - article [ref=e192] [cursor=pointer]:
+          - generic [ref=e193]:
+            - generic [ref=e194]: 28 февраля 2026
+            - generic [ref=e195]: Миграции
+          - 'heading "Как подготовить базу к переходу на ЗУП: чек-лист" [level=3] [ref=e196]'
+          - paragraph [ref=e197]: "Подробный чек-лист для подготовки к миграции: от аудита текущих данных до проверки корректности."
+          - link "Читать" [ref=e198]:
+            - /url: "#"
+      - link "Все статьи" [ref=e200] [cursor=pointer]:
+        - /url: blog.html
+    - generic [ref=e203]:
+      - heading "Нужна помощь с 1С?" [level=2] [ref=e204]
+      - paragraph [ref=e205]: Свяжитесь с нами — первая консультация бесплатная.
+      - generic [ref=e206]:
+        - link "Связаться" [ref=e207] [cursor=pointer]:
+          - /url: contacts.html
+        - link "+7 (900) 123-45-67" [ref=e208] [cursor=pointer]:
+          - /url: tel:+79001234567
+  - contentinfo [ref=e209]:
+    - generic [ref=e210]:
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: АП
+            - text: АверсПро
+          - paragraph [ref=e215]: Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.
+          - generic [ref=e216]:
+            - link "Telegram" [ref=e217] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e218]
+            - link "WhatsApp" [ref=e220] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e221]
+        - generic [ref=e223]:
+          - heading "Навигация" [level=4] [ref=e224]
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - link "Главная" [ref=e227] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e228]:
+              - link "Проекты" [ref=e229] [cursor=pointer]:
+                - /url: projects.html
+            - listitem [ref=e230]:
+              - link "Блог" [ref=e231] [cursor=pointer]:
+                - /url: blog.html
+            - listitem [ref=e232]:
+              - link "Контакты" [ref=e233] [cursor=pointer]:
+                - /url: contacts.html
+        - generic [ref=e234]:
+          - heading "Услуги" [level=4] [ref=e235]
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - link "1С:ЗУП" [ref=e238] [cursor=pointer]:
+                - /url: services-zup.html
+            - listitem [ref=e239]:
+              - link "1С:Бухгалтерия" [ref=e240] [cursor=pointer]:
+                - /url: services-buh.html
+            - listitem [ref=e241]:
+              - link "ЖКХ и НКО" [ref=e242] [cursor=pointer]:
+                - /url: services-gkh-nko.html
+            - listitem [ref=e243]:
+              - link "Другие решения" [ref=e244] [cursor=pointer]:
+                - /url: services-other.html
+        - generic [ref=e245]:
+          - heading "Контакты" [level=4] [ref=e246]
+          - paragraph [ref=e247]:
+            - link "+7 (900) 123-45-67" [ref=e248] [cursor=pointer]:
+              - /url: tel:+79001234567
+          - paragraph [ref=e249]:
+            - link "info@averspro.ru" [ref=e250] [cursor=pointer]:
+              - /url: mailto:info@averspro.ru
+          - paragraph [ref=e251]: г. Москва
+          - paragraph [ref=e252]: "Пн–Пт: 9:00 – 18:00"
+      - paragraph [ref=e254]: © 2025 АверсПро. Все права защищены.
+  - generic [ref=e255]:
+    - paragraph

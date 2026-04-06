@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — АверсПро | Статьи о 1С</title>
+  <meta name="description" content="Статьи и материалы по 1С: ЗУП, бухгалтерия, миграции, практические советы от специалистов АверсПро.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="АверсПро">
+        <span class="logo-mark">
+          <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+        </span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">Услуги
+              <svg class="nav-dropdown-icon" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <div class="nav-dropdown">
+              <a href="services-zup.html">1С:Зарплата и управление персоналом</a>
+              <a href="services-buh.html">1С:Бухгалтерия и налоговый учёт</a>
+              <a href="services-gkh-nko.html">1С для ЖКХ и НКО</a>
+              <a href="services-other.html">Другие решения</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link active">Блог</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="tel:+79275696628" class="header-phone">+7 (927) 569-66-28</a>
+        <a href="contacts.html" class="btn btn-red btn-sm">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+        <li>
+          <button class="mobile-nav-link mobile-dropdown-toggle">Услуги
+            <svg width="14" height="14" viewBox="0 0 12 12" style="margin-left:4px;vertical-align:middle"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <ul class="mobile-sub-list">
+            <li><a href="services-zup.html" class="mobile-sub-link">1С:ЗУП</a></li>
+            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html" class="mobile-sub-link">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html" class="mobile-sub-link">Другие решения</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Проекты</a></li>
+        <li><a href="blog.html" class="mobile-nav-link active">Блог</a></li>
+        <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+      </ul>
+      <a href="tel:+79275696628" class="mobile-phone">+7 (927) 569-66-28</a>
+      <a href="contacts.html" class="btn btn-red mobile-cta">Оставить заявку</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero-label">Блог</p>
+        <h1 class="page-hero-title">Статьи и материалы</h1>
+        <p class="page-hero-subtitle">Делимся опытом, разбираем сложные случаи и даём практические рекомендации по работе с 1С</p>
+      </div>
+    </section>
+
+    <!-- BLOG FILTERS + GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="blog-filters">
+          <button class="blog-filter active" data-filter="all">Все</button>
+          <button class="blog-filter" data-filter="zup">ЗУП</button>
+          <button class="blog-filter" data-filter="buh">Бухгалтерия</button>
+          <button class="blog-filter" data-filter="migration">Миграции</button>
+          <button class="blog-filter" data-filter="tips">Советы</button>
+        </div>
+        <div class="blog-grid">
+
+          <article class="blog-card" data-category="zup">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-zup-ndfl.webp" alt="Разбор ошибок в 1С:ЗУП и проверка кадровых документов" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">15 марта 2026</span>
+              <span class="blog-card-tag">ЗУП</span>
+            </div>
+            <h3>5 типичных ошибок при расчёте НДФЛ в ЗУП 3.0</h3>
+            <p>Разбираем самые частые проблемы и показываем, как их избежать стандартными средствами.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+          <article class="blog-card" data-category="migration">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-migration-checklist.webp" alt="Планирование миграции и подготовка чек-листа перехода на новую конфигурацию 1С" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">28 февраля 2026</span>
+              <span class="blog-card-tag">Миграции</span>
+            </div>
+            <h3>Как подготовить базу к переходу на ЗУП: чек-лист</h3>
+            <p>Подробный чек-лист для подготовки к миграции: от аудита текущих данных до проверки корректности.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+          <article class="blog-card" data-category="buh">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-vat.webp" alt="Отчёты и калькулятор для материала по раздельному учёту НДС в 1С" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">10 февраля 2026</span>
+              <span class="blog-card-tag">Бухгалтерия</span>
+            </div>
+            <h3>Раздельный учёт НДС в 1С: пошаговая инструкция</h3>
+            <p>Как правильно настроить раздельный учёт НДС при совмещении облагаемых и льготируемых операций.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+          <article class="blog-card" data-category="migration">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-merge.webp" alt="Обсуждение графиков и сценариев объединения баз 1С" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">25 января 2026</span>
+              <span class="blog-card-tag">Миграции</span>
+            </div>
+            <h3>Объединение баз 1С: когда это нужно и как это сделать</h3>
+            <p>Когда стоит объединять базы, какие подводные камни и как минимизировать риски.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+          <article class="blog-card" data-category="tips">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-close-month-2.webp" alt="Практическая работа по ускорению закрытия месяца в 1С:Бухгалтерии" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">12 января 2026</span>
+              <span class="blog-card-tag">Советы</span>
+            </div>
+            <h3>Как ускорить закрытие месяца в 1С:Бухгалтерии</h3>
+            <p>Практические рекомендации по оптимизации процедуры закрытия месяца.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+          <article class="blog-card" data-category="zup">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-zup-changes.webp" alt="Команда обсуждает изменения в расчёте зарплаты и настройке 1С на новый период" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">28 декабря 2025</span>
+              <span class="blog-card-tag">ЗУП</span>
+            </div>
+            <h3>Изменения в расчёте зарплаты 2026: что нужно знать</h3>
+            <p>Обзор ключевых изменений в законодательстве, влияющих на расчёт зарплаты.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="subscribe-block">
+          <h2>Подпишитесь на полезные материалы</h2>
+          <p>Раз в месяц присылаем подборку статей. Без спама.</p>
+          <form class="subscribe-form" data-form>
+            <input type="email" class="subscribe-input" placeholder="Ваш email" required>
+            <button type="submit" class="btn btn-blue">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="logo-mark">
+              <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+            </span>
+          </div>
+          <p class="footer-desc">Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4 class="footer-heading">Услуги</h4>
+          <ul>
+            <li><a href="services-zup.html">1С:ЗУП</a></li>
+            <li><a href="services-buh.html">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html">Другие решения</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4 class="footer-heading">Контакты</h4>
+          <p><a href="tel:+79275696628">+7 (927) 569-66-28</a></p>
+          <p><a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a></p>
+          <p>Москва, ул. Амурская, д.2, к.1, пом.555.</p>
+          <p>Пн&ndash;Пт: 09:00 &ndash; 17:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 АверсПро. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><p class="toast-message"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>

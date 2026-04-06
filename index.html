@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АверсПро — Настройка и поддержка 1С</title>
+  <meta name="description" content="Настройка и поддержка 1С: ЗУП до 2000 чел., объединение баз, восстановление учёта. С 1999 года. 200+ организаций.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="АверсПро">
+        <span class="logo-mark">
+          <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+        </span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">Услуги
+              <svg class="nav-dropdown-icon" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <div class="nav-dropdown">
+              <a href="services-zup.html">1С:Зарплата и управление персоналом</a>
+              <a href="services-buh.html">1С:Бухгалтерия и налоговый учёт</a>
+              <a href="services-gkh-nko.html">1С для ЖКХ и НКО</a>
+              <a href="services-other.html">Другие решения</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="tel:+79275696628" class="header-phone">+7 (927) 569-66-28</a>
+        <a href="contacts.html" class="btn btn-red btn-sm">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link active">Главная</a></li>
+        <li>
+          <button class="mobile-nav-link mobile-dropdown-toggle">Услуги
+            <svg width="14" height="14" viewBox="0 0 12 12" style="margin-left:4px;vertical-align:middle"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <ul class="mobile-sub-list">
+            <li><a href="services-zup.html" class="mobile-sub-link">1С:ЗУП</a></li>
+            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html" class="mobile-sub-link">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html" class="mobile-sub-link">Другие решения</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Проекты</a></li>
+        <li><a href="blog.html" class="mobile-nav-link">Блог</a></li>
+        <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+      </ul>
+      <a href="tel:+79275696628" class="mobile-phone">+7 (927) 569-66-28</a>
+      <a href="contacts.html" class="btn btn-red mobile-cta">Оставить заявку</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="hero-label"><span class="hero-label-dot"></span> С 1999 года на рынке 1С</p>
+            <h1 class="hero-title">Настройка и&nbsp;поддержка <span class="blue">1С</span></h1>
+            <p class="hero-subtitle">Решаем сложные задачи: ЗУП до&nbsp;2000 человек, объединение баз, восстановление учёта. На обслуживании 200+ организаций.</p>
+            <div class="hero-actions">
+              <a href="contacts.html" class="btn btn-red btn-lg">Получить консультацию</a>
+              <a href="projects.html" class="btn btn-outline">Наши проекты</a>
+            </div>
+            <!-- Trust strip under buttons -->
+            <div class="hero-trust">
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Сертифицированные специалисты</span>
+              </div>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Типовые решения без доработок</span>
+              </div>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>Клиенты с нами более 20 лет</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-photo-card">
+              <img src="images/company/company-logo-wall.webp" alt="Команда консультантов обсуждает проект автоматизации 1С" decoding="async">
+              <div class="hero-photo-badge">
+                <strong>АверсПро</strong>
+                <span>Внедрение, сопровождение и методическая поддержка 1С для бизнеса</span>
+              </div>
+            </div>
+            <!-- Key numbers panel -->
+            <div class="hero-stats-panel">
+              <div class="hero-stat">
+                <span class="hero-stat-num">200+</span>
+                <span class="hero-stat-label">организаций на&nbsp;обслуживании</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">25</span>
+                <span class="hero-stat-label">лет на рынке 1С</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">2 000</span>
+                <span class="hero-stat-label">сотрудников&nbsp;&mdash; макс. ЗУП проект</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-num">50+</span>
+                <span class="hero-stat-label">юрлиц объединено в&nbsp;одну базу</span>
+              </div>
+            </div>
+            <!-- Client quote -->
+            <div class="hero-quote">
+              <blockquote>&laquo;Снижение времени расчёта зарплаты в 5 раз, подготовки ведомостей &mdash; в 4 раза, перерасчётов &mdash; в 10 раз&raquo;</blockquote>
+              <p class="hero-quote-author">Кузьмина О.С., главный бухгалтер МУП&nbsp;&laquo;Астрводоканал&raquo;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Услуги</p>
+          <h2 class="section-title">Чем мы помогаем</h2>
+        </div>
+        <div class="services-grid">
+          <a href="services-zup.html" class="svc-card">
+            <div class="svc-card-media">
+              <img src="images/services/photo-zup-documents.webp" alt="Специалисты по 1С:ЗУП обсуждают кадровые документы" loading="lazy" decoding="async">
+            </div>
+            <div class="svc-card-icon">
+              <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="24" cy="14" r="6"/><path d="M12 38v-4a8 8 0 0 1 8-8h8a8 8 0 0 1 8 8v4"/><path d="M32 14h6M32 18h4M32 10h4"/></svg>
+            </div>
+            <h3>Зарплата и управление персоналом</h3>
+            <p>Расчёт зарплаты, кадровый учёт и отчётность для компаний до 2000 сотрудников</p>
+            <span class="svc-card-link">Подробнее &rarr;</span>
+          </a>
+          <a href="services-buh.html" class="svc-card">
+            <div class="svc-card-media">
+              <img src="images/services/photo-buh-desk.webp" alt="Рабочий стол бухгалтера с документами, калькулятором и расчётами для учёта в 1С" loading="lazy" decoding="async">
+            </div>
+            <div class="svc-card-icon">
+              <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="6" width="32" height="36" rx="3"/><path d="M16 14h16M16 20h16M16 26h10"/><circle cx="32" cy="32" r="6"/><path d="M32 29v3l2 1"/></svg>
+            </div>
+            <h3>Бухгалтерия и налоговый учёт</h3>
+            <p>Учёт, закрытие периода и подготовка отчётности для ОСНО, УСН, ЕСХН</p>
+            <span class="svc-card-link">Подробнее &rarr;</span>
+          </a>
+          <a href="services-gkh-nko.html" class="svc-card">
+            <div class="svc-card-media">
+              <img src="images/services/photo-gkh-building.webp" alt="Современный жилой дом для решений 1С в сфере ЖКХ" loading="lazy" decoding="async">
+            </div>
+            <div class="svc-card-icon">
+              <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 42h36"/><rect x="14" y="18" width="20" height="24" rx="2"/><path d="M24 6l-16 12h32L24 6z"/><rect x="20" y="30" width="8" height="12"/></svg>
+            </div>
+            <h3>1С для ЖКХ и НКО</h3>
+            <p>Расчёты с населением, субсидии, целевые средства, гранты</p>
+            <span class="svc-card-link">Подробнее &rarr;</span>
+          </a>
+          <a href="services-other.html" class="svc-card">
+            <div class="svc-card-media">
+              <img src="images/services/photo-retail-store.webp" alt="Розничный магазин и торговые процессы для решений 1С:Розница" loading="lazy" decoding="async">
+            </div>
+            <div class="svc-card-icon">
+              <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36M18 18v20"/></svg>
+            </div>
+            <h3>Другие решения</h3>
+            <p>1С:Розница, объединение баз, миграции, индивидуальные доработки</p>
+            <span class="svc-card-link">Подробнее &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section-blue stats-bar">
+      <div class="container">
+        <div class="stats-shell">
+          <div class="stats-heading">
+            <p class="stats-kicker">АверсПро в цифрах</p>
+            <h2 class="stats-title">Опыт и масштаб, подтверждённые реальными проектами 1С</h2>
+            <p class="stats-subtitle">Показываем не абстрактные обещания, а конкретные метрики по сопровождению, внедрению и объединению баз.</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">
+                <span class="stat-num" data-count="200">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">организаций на обслуживании</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">
+                <span class="stat-num" data-count="25">0</span>
+              </div>
+              <span class="stat-label">лет на рынке 1С</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">
+                <span class="stat-num" data-count="2000">0</span>
+              </div>
+              <span class="stat-label">сотрудников в крупнейшем ЗУП-проекте</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">
+                <span class="stat-num" data-count="50">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">юрлиц объединено в одну базу</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="lead-block company-block">
+          <div class="lead-text company-block-copy">
+            <p class="section-label">АверсПро в работе</p>
+            <h2>Команда, офис и практика, стоящие за проектами по 1С</h2>
+            <p class="company-copy-text">АверсПро с 1999 года внедряет и сопровождает решения 1С для бизнеса. Работаем с расчётом зарплаты, бухгалтерией, объединением баз, миграциями и восстановлением учёта, когда важны не обещания, а аккуратная ежедневная практика и понятный результат для клиента.</p>
+            <div class="company-points">
+              <div class="company-point">
+                <strong>Экспертиза</strong>
+                <span>Сертификаты, методическая база и практический опыт в проектах разного масштаба.</span>
+              </div>
+              <div class="company-point">
+                <strong>Подход</strong>
+                <span>Ведём клиента от первой консультации до стабильного сопровождения после запуска решения.</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-photo-strip company-photo-strip">
+            <div class="contact-photo-main">
+              <img src="images/company/company-hero.webp" alt="Специалист АверсПро в офисе компании рядом с фирменной вывеской" loading="lazy" decoding="async">
+              <div class="contact-photo-badge">
+                <strong>АверсПро с 1999 года</strong>
+                <span>Живая команда, которая остаётся на связи и после внедрения.</span>
+              </div>
+            </div>
+            <div class="contact-photo-stack">
+              <div class="contact-photo-item">
+                <img src="images/company/company-certificates.webp" alt="Сертификаты и подтверждённая экспертиза команды АверсПро по продуктам 1С" loading="lazy" decoding="async">
+              </div>
+              <div class="contact-photo-item">
+                <img src="images/company/company-contact-call.webp" alt="Специалист АверсПро консультирует клиента по телефону по вопросам работы в 1С" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES HOME -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Кейсы</p>
+          <h2 class="section-title">Ключевые проекты</h2>
+        </div>
+        <div class="cases-home-grid">
+          <div class="case-home-card">
+            <div class="case-home-media">
+              <img src="images/projects/photo-case-zup-team.webp" alt="Команда клиента обсуждает проект перехода на 1С:ЗУП" loading="lazy" decoding="async">
+            </div>
+            <span class="case-tag">ЗУП · 2000 сотрудников</span>
+            <h3>Переход на ЗУП для 2000 сотрудников</h3>
+            <p class="client">МУП &laquo;Астрводоканал&raquo;</p>
+            <p><strong>Задача:</strong> Перейти с УПП на современную ЗУП. Разрозненные данные, ошибки в НДФЛ, долгий расчёт зарплаты.</p>
+            <p><strong>Результат:</strong> Расчёт зарплаты ускорился <strong>в 5 раз</strong>, ведомости — <strong>в 4 раза</strong> быстрее, перерасчёты снизились <strong>в 10 раз</strong>.</p>
+            <a href="projects.html" class="read-more">Читать кейс &rarr;</a>
+          </div>
+          <div class="case-home-card">
+            <div class="case-home-media">
+              <img src="images/projects/photo-case-merge-charts.webp" alt="Аналитика и обсуждение проекта объединения баз 1С" loading="lazy" decoding="async">
+            </div>
+            <span class="case-tag">Объединение баз</span>
+            <h3>38 юрлиц из 8 баз — в одну</h3>
+            <p class="client">Группа компаний</p>
+            <p><strong>Задача:</strong> Консолидировать учёт из 8 разрозненных баз. Дубли контрагентов, разная аналитика, битые ссылки.</p>
+            <p><strong>Результат:</strong> Единая база, консолидированная отчётность формируется <strong>в 3 раза быстрее</strong>.</p>
+            <a href="projects.html" class="read-more">Читать кейс &rarr;</a>
+          </div>
+        </div>
+        <div class="section-footer">
+          <a href="projects.html" class="btn btn-outline">Все проекты</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAD FORM + MAGNET -->
+    <section class="section">
+      <div class="container">
+        <div class="lead-block">
+          <div class="lead-text">
+            <h2>Получите бесплатную консультацию</h2>
+            <p>Расскажите о вашей задаче — мы подберём решение и оценим сроки. Первая консультация бесплатная.</p>
+            <div class="lead-magnet">
+              <div class="lead-magnet-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <p>Скачайте памятку по расчёту зарплаты — бесплатно при заявке</p>
+            </div>
+          </div>
+          <form class="form-card" data-form data-lead-magnet>
+            <div class="form-card-header">
+              <span class="form-card-kicker">Обратная связь</span>
+              <h3>Оставьте заявку</h3>
+              <p>Опишите задачу, и мы свяжемся с вами, чтобы предложить подходящее решение по 1С.</p>
+            </div>
+            <div class="form-group">
+              <label for="lead-name">Имя</label>
+              <input type="text" id="lead-name" name="name" required placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <label for="lead-phone">Телефон</label>
+              <input type="tel" id="lead-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+              <label for="lead-email">Email</label>
+              <input type="email" id="lead-email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="lead-consent" name="consent" required>
+              <label for="lead-consent">Согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="btn btn-red btn-full">Отправить заявку</button>
+            <!-- Download button appears after submit -->
+            <div class="lead-download hidden" id="leadDownload">
+              <a href="images/pamyatka-zarplata.pdf" download class="btn btn-blue btn-full">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Скачать памятку (PDF)
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Блог</p>
+          <h2 class="section-title">Последние публикации</h2>
+        </div>
+        <div class="blog-home-grid blog-home-2col">
+          <article class="blog-card" data-category="zup">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-preview-ndfl.webp" alt="Материал по ошибкам НДФЛ и кадровым документам в 1С:ЗУП" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">15 марта 2026</span>
+              <span class="blog-card-tag">ЗУП</span>
+            </div>
+            <h3>5 типичных ошибок при расчёте НДФЛ в ЗУП 3.0</h3>
+            <p>Разбираем самые частые проблемы и показываем, как их избежать стандартными средствами.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+          <article class="blog-card" data-category="migration">
+            <div class="blog-card-media">
+              <img src="images/blog/photo-blog-preview-migration.webp" alt="Подготовка к миграции 1С и анализ данных на рабочем месте" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-card-date">28 февраля 2026</span>
+              <span class="blog-card-tag">Миграции</span>
+            </div>
+            <h3>Как подготовить базу к переходу на ЗУП: чек-лист</h3>
+            <p>Подробный чек-лист для подготовки к миграции: от аудита текущих данных до проверки корректности.</p>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm blog-read-btn">Читать</a>
+          </article>
+        </div>
+        <div class="section-footer">
+          <a href="blog.html" class="btn btn-outline">Все статьи</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS STRIP -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-block">
+          <div class="cta-grid">
+            <div class="cta-copy">
+              <span class="cta-eyebrow">Бесплатная консультация</span>
+              <h2>Нужна помощь с 1С?</h2>
+              <p>Подключимся к задаче, разберём текущую конфигурацию и предложим следующий шаг без лишней бюрократии.</p>
+            </div>
+            <div class="cta-actions">
+              <a href="contacts.html" class="btn btn-white btn-lg">Связаться</a>
+              <a href="tel:+79275696628" class="cta-phone">
+                <span class="cta-phone-label">Позвонить сейчас</span>
+                <span class="cta-phone-value">+7 (927) 569-66-28</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="logo-mark">
+              <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+            </span>
+          </div>
+          <p class="footer-desc">Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4 class="footer-heading">Услуги</h4>
+          <ul>
+            <li><a href="services-zup.html">1С:ЗУП</a></li>
+            <li><a href="services-buh.html">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html">Другие решения</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4 class="footer-heading">Контакты</h4>
+          <p><a href="tel:+79275696628">+7 (927) 569-66-28</a></p>
+          <p><a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a></p>
+          <p>Москва, ул. Амурская, д.2, к.1, пом.555.</p>
+          <p>Пн&ndash;Пт: 09:00 &ndash; 17:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 АверсПро. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><p class="toast-message"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>

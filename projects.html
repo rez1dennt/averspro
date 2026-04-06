@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекты и кейсы — АверсПро</title>
+  <meta name="description" content="Примеры выполненных проектов АверсПро: переходы на ЗУП, восстановление учёта, объединение баз 1С. Реальные кейсы с результатами.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="АверсПро">
+        <span class="logo-mark">
+          <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+        </span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">Услуги
+              <svg class="nav-dropdown-icon" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <div class="nav-dropdown">
+              <a href="services-zup.html">1С:Зарплата и управление персоналом</a>
+              <a href="services-buh.html">1С:Бухгалтерия и налоговый учёт</a>
+              <a href="services-gkh-nko.html">1С для ЖКХ и НКО</a>
+              <a href="services-other.html">Другие решения</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link active">Проекты</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="tel:+79275696628" class="header-phone">+7 (927) 569-66-28</a>
+        <a href="contacts.html" class="btn btn-red btn-sm">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+        <li>
+          <button class="mobile-nav-link mobile-dropdown-toggle">Услуги
+            <svg width="14" height="14" viewBox="0 0 12 12" style="margin-left:4px;vertical-align:middle"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <ul class="mobile-sub-list">
+            <li><a href="services-zup.html" class="mobile-sub-link">1С:ЗУП</a></li>
+            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html" class="mobile-sub-link">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html" class="mobile-sub-link">Другие решения</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link active">Проекты</a></li>
+        <li><a href="blog.html" class="mobile-nav-link">Блог</a></li>
+        <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+      </ul>
+      <a href="tel:+79275696628" class="mobile-phone">+7 (927) 569-66-28</a>
+      <a href="contacts.html" class="btn btn-red mobile-cta">Оставить заявку</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero-label">Проектный опыт</p>
+        <h1 class="page-hero-title">Примеры работ</h1>
+        <p class="page-hero-subtitle">Реальные проекты с&nbsp;измеримыми результатами. Каждый кейс&nbsp;&mdash; это история решения конкретной задачи клиента.</p>
+      </div>
+    </section>
+
+    <!-- PROJECT 1: Водоканал -->
+    <section class="section">
+      <div class="container">
+        <div class="project-card">
+          <div class="project-media">
+            <img src="images/projects/photo-project-zup-office.webp" alt="Работа над проектом внедрения 1С:ЗУП в офисе клиента" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <span class="case-tag">ЗУП</span>
+            <h2 class="project-title">Переход на ЗУП для 2000 сотрудников</h2>
+            <p class="project-client">МУП &laquo;Астрводоканал&raquo;</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4>Ситуация</h4>
+              <p>Предприятие работало на&nbsp;УПП. Данные были разрозненные, накопились ошибки в&nbsp;НДФЛ, расчёт зарплаты занимал слишком много времени. Требовался переход на&nbsp;современную 1С:ЗУП.</p>
+            </div>
+            <div class="project-col">
+              <h4>Что сделали</h4>
+              <ul>
+                <li>Провели анализ бизнес-процессов расчёта</li>
+                <li>Настроили шаблоны начислений и удержаний</li>
+                <li>Перенесли данные за прошлые периоды</li>
+                <li>Создали штатное расписание</li>
+                <li>Обучили 12 сотрудников бухгалтерии</li>
+                <li>Настроили интеграцию с Бухгалтерией КОРП</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-results">
+            <div class="project-result">
+              <strong>в 5 раз</strong>
+              <span>быстрее расчёт зарплаты</span>
+            </div>
+            <div class="project-result">
+              <strong>в 4 раза</strong>
+              <span>быстрее формирование ведомостей</span>
+            </div>
+            <div class="project-result">
+              <strong>в 10 раз</strong>
+              <span>меньше перерасчётов</span>
+            </div>
+          </div>
+          <div class="project-quote">
+            <blockquote>
+              &laquo;При корректном вводе данных НДФЛ рассчитывается верно, не&nbsp;требуется ручных корректировок. Формирование ведомостей ускорилось в&nbsp;4&nbsp;раза.&raquo;
+            </blockquote>
+            <p class="project-quote-author">Кузьмина О.С., главный бухгалтер МУП &laquo;Астрводоканал&raquo;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 2: Объединение баз -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="project-card">
+          <div class="project-media">
+            <img src="images/projects/photo-project-merge-team.webp" alt="Команда обсуждает документы и согласует проект объединения нескольких баз 1С" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <span class="case-tag">Объединение баз</span>
+            <h2 class="project-title">Объединение баз 158 организаций</h2>
+            <p class="project-client">Крупные холдинги и группы компаний</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4>Ситуация</h4>
+              <p>Клиенты из&nbsp;разных отраслей обращались с&nbsp;типовой задачей: несколько юридических лиц ведутся в&nbsp;разных базах 1С, данные не&nbsp;сходятся, консолидированная отчётность формируется вручную.</p>
+            </div>
+            <div class="project-col">
+              <h4>Что сделали</h4>
+              <ul>
+                <li>Разработали методологию объединения с сохранением истории</li>
+                <li>Устранили дубли в справочниках</li>
+                <li>Привели аналитику к единому формату</li>
+                <li>Перенесли документы с сохранением проводок</li>
+                <li>Проверили корректность остатков</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-results">
+            <div class="project-result">
+              <strong>158</strong>
+              <span>организаций объединено</span>
+            </div>
+            <div class="project-result">
+              <strong>от 4 дней</strong>
+              <span>минимальный срок</span>
+            </div>
+            <div class="project-result">
+              <strong>в 3 раза</strong>
+              <span>быстрее консолидация</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 3: Астраханьгазсервис -->
+    <section class="section">
+      <div class="container">
+        <div class="project-card">
+          <div class="project-media">
+            <img src="images/projects/photo-project-zup-support.webp" alt="Долгосрочное сопровождение клиента по расчёту зарплаты в 1С" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <span class="case-tag">ЗУП</span>
+            <h2 class="project-title">20 лет безупречного расчёта зарплаты</h2>
+            <p class="project-client">АО &laquo;Астраханьгазсервис&raquo;, ~600 сотрудников</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4>Ситуация</h4>
+              <p>Компания работала с&nbsp;АверсПро с&nbsp;2000&nbsp;года. Требовались последовательные переходы между версиями ЗУП (7.7 &rarr; 2.5 &rarr; 3.0) с&nbsp;сохранением всей истории расчётов для ~600&nbsp;сотрудников с&nbsp;более чем 100&nbsp;видами начислений.</p>
+            </div>
+            <div class="project-col">
+              <h4>Что сделали</h4>
+              <ul>
+                <li>Запустили расчёт зарплаты в 2000 году</li>
+                <li>Провели переходы 7.7 &rarr; 2.5 &rarr; 3.0</li>
+                <li>Настроили 100+ видов начислений</li>
+                <li>Настроили обмены с бухгалтерией</li>
+                <li>Обеспечили сопровождение 20+ лет</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-results">
+            <div class="project-result">
+              <strong>20+ лет</strong>
+              <span>непрерывного сопровождения</span>
+            </div>
+            <div class="project-result">
+              <strong>100+</strong>
+              <span>видов начислений</span>
+            </div>
+            <div class="project-result">
+              <strong>0</strong>
+              <span>нарушений при проверках</span>
+            </div>
+          </div>
+          <div class="project-quote">
+            <blockquote>
+              &laquo;Контролирующими органами не&nbsp;выявляется нарушений ведения учёта. Все переходы между версиями выполнены без потери данных.&raquo;
+            </blockquote>
+            <p class="project-quote-author">Антонова Т.М., главный бухгалтер АО &laquo;Астраханьгазсервис&raquo;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 4: Восстановление учёта -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="project-card">
+          <div class="project-media">
+            <img src="images/projects/photo-project-audit.webp" alt="Аудит документов и восстановление бухгалтерского учёта перед переходом на ERP" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <span class="case-tag">Восстановление учёта</span>
+            <h2 class="project-title">Восстановление учёта по аудиторскому заключению</h2>
+            <p class="project-client">Подготовка базы к переходу на ERP</p>
+          </div>
+          <div class="project-body">
+            <div class="project-col">
+              <h4>Ситуация</h4>
+              <p>После смены главного бухгалтера потребовалось привести учёт в&nbsp;соответствие с&nbsp;аудиторским заключением и&nbsp;подготовить базу к&nbsp;переходу на&nbsp;ERP.</p>
+            </div>
+            <div class="project-col">
+              <h4>Что сделали</h4>
+              <ul>
+                <li>Проанализировали расхождения по счетам (60, 62, 76, 91)</li>
+                <li>Настроили учётную политику</li>
+                <li>Исправили закрытие периодов</li>
+                <li>Устранили дубли, восстановили аналитику</li>
+                <li>Подготовили базу к миграции на ERP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-results">
+            <div class="project-result">
+              <strong>4 месяца</strong>
+              <span>от начала до готовности к ERP</span>
+            </div>
+            <div class="project-result">
+              <strong>100%</strong>
+              <span>замечаний аудита устранено</span>
+            </div>
+            <div class="project-result">
+              <strong>0</strong>
+              <span>расхождений в остатках</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-block">
+          <div class="cta-grid">
+            <div class="cta-copy">
+              <span class="cta-eyebrow">Разбор проекта</span>
+              <h2>Нужен похожий проект?</h2>
+              <p>Опишете задачу, а мы предложим рабочий сценарий внедрения, миграции или объединения баз с понятными этапами и сроками.</p>
+            </div>
+            <div class="cta-actions">
+              <a href="contacts.html" class="btn btn-white btn-lg">Связаться</a>
+              <a href="tel:+79275696628" class="cta-phone">
+                <span class="cta-phone-label">Обсудить с консультантом</span>
+                <span class="cta-phone-value">+7 (927) 569-66-28</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="logo-mark">
+              <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+            </span>
+          </div>
+          <p class="footer-desc">Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4 class="footer-heading">Услуги</h4>
+          <ul>
+            <li><a href="services-zup.html">1С:ЗУП</a></li>
+            <li><a href="services-buh.html">1С:Бухгалтерия</a></li>
+            <li><a href="services-gkh-nko.html">ЖКХ и НКО</a></li>
+            <li><a href="services-other.html">Другие решения</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4 class="footer-heading">Контакты</h4>
+          <p><a href="tel:+79275696628">+7 (927) 569-66-28</a></p>
+          <p><a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a></p>
+          <p>Москва, ул. Амурская, д.2, к.1, пом.555.</p>
+          <p>Пн&ndash;Пт: 09:00 &ndash; 17:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 АверсПро. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><p class="toast-message"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>
