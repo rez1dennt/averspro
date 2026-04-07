@@ -12,7 +12,13 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8766/index.html)",
       "mcp__plugin_playwright_playwright__browser_close",
       "Bash(npx -y http-server -p 8181 --silent)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8181/index.html)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8181/index.html)",
+      "Bash(ffmpeg -version)",
+      "Bash(magick -version)",
+      "Bash(pip show:*)",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow available'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow available'\\)\")",
+      "Bash(python -c ':*)"
     ]
   },
   "enabledPlugins": {
