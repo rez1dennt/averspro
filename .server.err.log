@@ -1,0 +1,7 @@
+::ffff:127.0.0.1 - - [07/Apr/2026 11:47:03] "GET /script.js HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:47:03] "GET /style.css HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:48:06] "GET /style.css HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:48:06] "GET /script.js HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:48:26] "GET /blog.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:48:26] "GET /style.css HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [07/Apr/2026 11:48:26] "GET /script.js HTTP/1.1" 304 -

@@ -176,37 +176,254 @@
   });
 
   // --- Form submit ---
-  const toast = document.getElementById('toast');
-  const showToast = (msg) => {
-    if (!toast) return;
-    const el = toast.querySelector('.toast-message');
-    if (msg && el) el.textContent = msg;
-    toast.classList.add('active');
-    setTimeout(() => toast.classList.remove('active'), 4000);
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const getFieldContainer = field => field.closest('.form-group, .form-check');
+  const normalizeFieldValue = field => {
+    const nextValue = field.value.trim().replace(/\s+/g, ' ');
+    field.value = nextValue;
+    return nextValue;
+  };
+
+  const getErrorNode = field => {
+    const container = getFieldContainer(field);
+    if (container) {
+      let error = container.querySelector('.form-error');
+      if (!error) {
+        error = document.createElement('div');
+        error.className = 'form-error';
+        error.setAttribute('aria-live', 'polite');
+        container.append(error);
+      }
+      return error;
+    }
+
+    let error = field.nextElementSibling;
+    if (!error || !error.classList.contains('form-error')) {
+      error = document.createElement('div');
+      error.className = 'form-error';
+      error.setAttribute('aria-live', 'polite');
+      field.insertAdjacentElement('afterend', error);
+    }
+    return error;
+  };
+
+  const setFieldError = (field, message) => {
+    const container = getFieldContainer(field);
+    if (container) container.classList.add('is-invalid');
+    field.classList.add('is-invalid');
+    field.setAttribute('aria-invalid', 'true');
+    getErrorNode(field).textContent = message;
+  };
+
+  const clearFieldError = field => {
+    const container = getFieldContainer(field);
+    if (container) container.classList.remove('is-invalid');
+    field.classList.remove('is-invalid');
+    field.removeAttribute('aria-invalid');
+
+    const error = container
+      ? container.querySelector('.form-error')
+      : (field.nextElementSibling?.classList.contains('form-error') ? field.nextElementSibling : null);
+    if (error) error.textContent = '';
+  };
+
+  const clearFormErrors = form => {
+    form.querySelectorAll('input, textarea, select').forEach(clearFieldError);
+  };
+
+  const getFormStatusNode = form => {
+    let status = form.querySelector('.form-status');
+    if (status) return status;
+
+    status = document.createElement('div');
+    status.className = 'form-status';
+    status.setAttribute('aria-live', 'polite');
+
+    const leadDownload = form.querySelector('.lead-download');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    if (leadDownload) {
+      form.insertBefore(status, leadDownload);
+    } else if (submitButton) {
+      submitButton.insertAdjacentElement('afterend', status);
+    } else {
+      form.append(status);
+    }
+
+    return status;
+  };
+
+  const setFormStatus = (form, message, type) => {
+    const status = getFormStatusNode(form);
+    status.className = `form-status is-${type}`;
+    status.textContent = message;
+  };
+
+  const clearFormStatus = form => {
+    const status = form.querySelector('.form-status');
+    if (!status) return;
+    status.className = 'form-status';
+    status.textContent = '';
+  };
+
+  const getInvalidFormMessage = form => {
+    if (form.classList.contains('subscribe-form')) {
+      return 'Проверьте email в поле выше, чтобы оформить подписку.';
+    }
+    return 'Проверьте отмеченные поля. После исправления заявка отправится из этой формы.';
+  };
+
+  const getPendingFormMessage = form => {
+    if (form.classList.contains('subscribe-form')) {
+      return 'Оформляем подписку на полезные материалы по 1С...';
+    }
+    return 'Отправляем заявку. Сообщение останется прямо под кнопкой.';
+  };
+
+  const getSuccessFormMessage = form => {
+    if (form.hasAttribute('data-lead-magnet')) {
+      return 'Заявка принята. Материал для скачивания уже доступен ниже.';
+    }
+    if (form.classList.contains('subscribe-form')) {
+      return 'Подписка оформлена. Материалы по 1С будем отправлять на указанный email.';
+    }
+    return 'Заявка принята. Мы свяжемся с вами после изучения задачи.';
+  };
+
+  const validateForm = form => {
+    clearFormErrors(form);
+
+    let firstInvalidField = null;
+    const invalidate = (field, message) => {
+      if (!field) return;
+      setFieldError(field, message);
+      if (!firstInvalidField) firstInvalidField = field;
+    };
+
+    if (form.classList.contains('subscribe-form')) {
+      const subscribeEmail = form.querySelector('input[type="email"]');
+      const emailValue = subscribeEmail ? normalizeFieldValue(subscribeEmail).toLowerCase() : '';
+
+      if (!emailValue) {
+        invalidate(subscribeEmail, 'Укажите рабочий email, чтобы получить материалы по 1С.');
+      } else if (!emailPattern.test(emailValue)) {
+        invalidate(subscribeEmail, 'Проверьте email: адрес нужен в формате name@example.com.');
+      }
+
+      return { valid: !firstInvalidField, firstInvalidField };
+    }
+
+    const nameInput = form.querySelector('input[name="name"]');
+    const phoneInput = form.querySelector('input[name="phone"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const serviceSelect = form.querySelector('select[name="service"]');
+    const messageInput = form.querySelector('textarea[name="message"]');
+    const consentInput = form.querySelector('input[name="consent"]');
+
+    if (nameInput) {
+      const nameValue = normalizeFieldValue(nameInput);
+      if (!nameValue) {
+        invalidate(nameInput, 'Представьтесь, чтобы мы понимали, как к вам обращаться.');
+      } else if (nameValue.length < 2) {
+        invalidate(nameInput, 'Имя должно быть не короче двух символов.');
+      }
+    }
+
+    const phoneDigits = phoneInput ? getPhoneDigits(phoneInput.value) : '';
+    if (phoneInput) {
+      if (phoneDigits) phoneInput.value = formatPhoneValue(phoneDigits);
+      if (phoneInput.hasAttribute('required') && phoneDigits.length !== 10) {
+        invalidate(phoneInput, 'Укажите телефон полностью, чтобы мы могли созвониться по вашей задаче.');
+      } else if (phoneDigits && phoneDigits.length !== 10) {
+        invalidate(phoneInput, 'Проверьте телефон: нужен полный номер в формате +7 (___) ___-__-__.');
+      }
+    }
+
+    let emailValue = '';
+    if (emailInput) {
+      emailValue = normalizeFieldValue(emailInput).toLowerCase();
+      if (emailValue) emailInput.value = emailValue;
+      if (emailValue && !emailPattern.test(emailValue)) {
+        invalidate(emailInput, 'Проверьте email: мы используем его для ответа по вашей заявке.');
+      }
+    }
+
+    if (form.classList.contains('contact-form') && !phoneDigits && !emailValue) {
+      invalidate(phoneInput, 'Оставьте телефон или email, чтобы обсудить вашу задачу по 1С.');
+      invalidate(emailInput, 'Нужен хотя бы один способ связи: телефон или email.');
+    }
+
+    if (serviceSelect && !serviceSelect.value) {
+      invalidate(serviceSelect, 'Выберите направление 1С, чтобы мы подключили нужного специалиста.');
+    }
+
+    if (messageInput) {
+      const messageValue = normalizeFieldValue(messageInput);
+      if (!messageValue) {
+        invalidate(messageInput, 'Кратко опишите задачу: конфигурацию, проблему или нужный результат.');
+      } else if (messageValue.length < 12) {
+        invalidate(messageInput, 'Добавьте чуть больше деталей по задаче, хотя бы 12 символов.');
+      }
+    }
+
+    if (consentInput && !consentInput.checked) {
+      invalidate(consentInput, 'Подтвердите согласие на обработку данных, чтобы мы могли принять заявку.');
+    }
+
+    return { valid: !firstInvalidField, firstInvalidField };
   };
 
   document.querySelectorAll('[data-form]').forEach(form => {
+    form.setAttribute('novalidate', 'novalidate');
+
+    form.querySelectorAll('input, textarea, select').forEach(field => {
+      const eventName = field.type === 'checkbox' || field.tagName === 'SELECT' ? 'change' : 'input';
+      field.addEventListener(eventName, () => {
+        clearFieldError(field);
+        clearFormStatus(form);
+      });
+    });
+
+    const phoneInput = form.querySelector('input[name="phone"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    if (phoneInput && emailInput) {
+      phoneInput.addEventListener('input', () => clearFieldError(emailInput));
+      emailInput.addEventListener('input', () => clearFieldError(phoneInput));
+    }
+
     form.addEventListener('submit', e => {
       e.preventDefault();
+      const { valid, firstInvalidField } = validateForm(form);
+      if (!valid) {
+        setFormStatus(form, getInvalidFormMessage(form), 'error');
+        firstInvalidField?.focus();
+        return;
+      }
+
       const btn = form.querySelector('button[type="submit"]');
-      const orig = btn.textContent;
-      btn.textContent = 'Отправка...';
-      btn.disabled = true;
+      const orig = btn?.textContent ?? '';
+      setFormStatus(form, getPendingFormMessage(form), 'pending');
+      if (btn) {
+        btn.textContent = 'Отправка...';
+        btn.disabled = true;
+      }
+
       setTimeout(() => {
         form.reset();
-        btn.textContent = orig;
-        btn.disabled = false;
+        clearFormErrors(form);
+        if (btn) {
+          btn.textContent = orig;
+          btn.disabled = false;
+        }
 
         // Lead-magnet: show download button
         if (form.hasAttribute('data-lead-magnet')) {
           const dl = form.querySelector('.lead-download');
           if (dl) dl.classList.remove('hidden');
-          showToast('Заявка отправлена! Скачайте памятку ниже.');
-        } else if (form.classList.contains('subscribe-form')) {
-          showToast('Вы подписаны! Спасибо.');
-        } else {
-          showToast('Заявка отправлена! Мы свяжемся с вами.');
         }
+
+        setFormStatus(form, getSuccessFormMessage(form), 'success');
       }, 1000);
     });
   });
