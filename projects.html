@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Проекты и кейсы — АверсПро</title>
-  <meta name="description" content="Примеры выполненных проектов АверсПро: переходы на ЗУП, восстановление учёта, объединение баз 1С. Реальные кейсы с результатами.">
-   <link rel="shortcut icon" href="images/brand/logo.webp" type="image/x-icon">
+  <title>Примеры нашей работы — Аверс-Про</title>
+  <meta name="description" content="Примеры нашей работы: восстановление учёта, переход на ЗУП, срочные проекты и объединение баз 1С.">
+  <link rel="shortcut icon" href="images/brand/logo.webp" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
@@ -13,12 +13,11 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="АверсПро">
+      <a href="index.html" class="logo" aria-label="Аверс-Про">
         <span class="logo-mark">
-          <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+          <img src="images/brand/logo.webp" alt="Логотип Аверс-Про" class="logo-image">
         </span>
       </a>
       <nav class="main-nav">
@@ -29,9 +28,10 @@
               <svg class="nav-dropdown-icon" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
             </a>
             <div class="nav-dropdown">
-              <a href="services-zup.html">1С:Зарплата и управление персоналом</a>
-              <a href="services-buh.html">1С:Бухгалтерия и налоговый учёт</a>
-              <a href="services-gkh-nko.html">1С для ЖКХ и НКО</a>
+              <a href="services-its.html">1С:Обновление и сервисы (1С:ИТС)</a>
+              <a href="services-zup.html">1С:Зарплата и управление персоналом (ЗУП)</a>
+              <a href="services-buh.html">1С:Бухгалтерия предприятия</a>
+              <a href="services-gkh-nko.html">1С для организаций ЖКХ</a>
               <a href="services-other.html">Другие решения</a>
             </div>
           </li>
@@ -41,14 +41,16 @@
         </ul>
       </nav>
       <div class="header-right">
-        <a href="tel:+79275696628" class="header-phone">+7 (927) 569-66-28</a>
-        <a href="contacts.html" class="btn btn-red btn-sm">Оставить заявку</a>
+        <div class="header-meta">
+          <a href="tel:+79275696628" class="header-phone">+79275696628</a>
+          <span class="header-city">Москва и МО</span>
+        </div>
+        <a href="tel:+79275696628" class="btn btn-red btn-sm">Позвонить</a>
       </div>
       <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-inner">
       <ul class="mobile-nav-list">
@@ -58,9 +60,10 @@
             <svg width="14" height="14" viewBox="0 0 12 12" style="margin-left:4px;vertical-align:middle"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
           </button>
           <ul class="mobile-sub-list">
+            <li><a href="services-its.html" class="mobile-sub-link">1С:ИТС</a></li>
             <li><a href="services-zup.html" class="mobile-sub-link">1С:ЗУП</a></li>
-            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия</a></li>
-            <li><a href="services-gkh-nko.html" class="mobile-sub-link">ЖКХ и НКО</a></li>
+            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия предприятия</a></li>
+            <li><a href="services-gkh-nko.html" class="mobile-sub-link">1С для организаций ЖКХ</a></li>
             <li><a href="services-other.html" class="mobile-sub-link">Другие решения</a></li>
           </ul>
         </li>
@@ -68,254 +71,272 @@
         <li><a href="blog.html" class="mobile-nav-link">Блог</a></li>
         <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
       </ul>
-      <a href="tel:+79275696628" class="mobile-phone">+7 (927) 569-66-28</a>
-      <a href="contacts.html" class="btn btn-red mobile-cta">Оставить заявку</a>
+      <a href="tel:+79275696628" class="mobile-phone">+79275696628</a>
+      <span class="mobile-city">Москва и МО</span>
+      <a href="tel:+79275696628" class="btn btn-red mobile-cta">Позвонить</a>
     </div>
   </div>
 
   <main>
 
-    <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="container">
         <p class="page-hero-label">Проектный опыт</p>
-        <h1 class="page-hero-title">Примеры работ</h1>
-        <p class="page-hero-subtitle">Реальные проекты с&nbsp;измеримыми результатами. Каждый кейс&nbsp;&mdash; это история решения конкретной задачи клиента.</p>
+        <h1 class="page-hero-title">Примеры наших работ</h1>
       </div>
     </section>
 
-    <!-- PROJECT 1: Водоканал -->
     <section class="section">
-      <div class="container">
-        <div class="project-card">
+      <div class="container project-stack">
+        <article class="project-card" id="case-audit-4-months">
           <div class="project-media">
-            <img src="images/projects/photo-project-zup-office.webp" alt="Работа над проектом настройки 1С:ЗУП в офисе клиента" loading="lazy" decoding="async">
+            <img src="images/projects/photo-project-audit.webp" alt="Восстановление учёта по аудиторскому заключению за 4 месяца" loading="lazy" decoding="async">
           </div>
           <div class="project-header">
-            <span class="case-tag">ЗУП</span>
-            <h2 class="project-title">Переход на ЗУП для 2000 сотрудников</h2>
-            <p class="project-client">МУП &laquo;Астрводоканал&raquo;</p>
+            <h2 class="project-title">1. Восстановление учёта по аудиторскому заключению за 4 месяца</h2>
+            <p class="project-client">Помощь новому главбуху в устранении замечаний аудитора</p>
           </div>
-          <div class="project-body">
-            <div class="project-col">
-              <h4>Ситуация</h4>
-              <p>Предприятие работало на&nbsp;УПП. Данные были разрозненные, накопились ошибки в&nbsp;НДФЛ, расчёт зарплаты занимал слишком много времени. Требовался переход на&nbsp;современную 1С:ЗУП.</p>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Задача</h4>
+              <p>После смены главного бухгалтера у нового клиента потребовалось оперативно привести учёт в соответствие с аудиторским заключением и по требованию Головной компании подготовить базу к переходу на новую ERP-систему.</p>
             </div>
-            <div class="project-col">
-              <h4>Что сделали</h4>
+            <div class="text-card">
+              <h4>Что сделали в кратчайшие сроки совместно с главбухом и финотделом</h4>
               <ul>
-                <li>Провели анализ бизнес-процессов расчёта</li>
-                <li>Настроили шаблоны начислений и удержаний</li>
-                <li>Перенесли данные за прошлые периоды</li>
-                <li>Создали штатное расписание</li>
-                <li>Обучили 12 сотрудников бухгалтерии</li>
-                <li>Настроили интеграцию с Бухгалтерией КОРП</li>
+                <li>Проанализировали расхождения по основным счетам учёта (затратные счета, 60, 62, 76, 91 и др.), в т.ч. по валютному учету, лизингу и пр. и настроили учётную политику, в т.ч. НЗП, резервов по сомнительным долгам.</li>
+                <li>Исправили закрытие периодов, устранили дубли контрагентов и договоров, объединили партии, убрали минусовые остатки.</li>
+                <li>Восстановили аналитику по счетам с помощью собственной обработки для массового исправления субсчетов и партий.</li>
+                <li>Отработали замечания головной компании по предварительному обследованию базы.</li>
+                <li>Подготовили базу к миграции на ERP: сверили остатки, закрыли 91 счёт, проверили резервы, НДС, курсовые разницы.</li>
               </ul>
             </div>
           </div>
-          <div class="project-results">
-            <div class="project-result">
-              <strong>в 5 раз</strong>
-              <span>быстрее расчёт зарплаты</span>
-            </div>
-            <div class="project-result">
-              <strong>в 4 раза</strong>
-              <span>быстрее формирование ведомостей</span>
-            </div>
-            <div class="project-result">
-              <strong>в 10 раз</strong>
-              <span>меньше перерасчётов</span>
-            </div>
-          </div>
-          <div class="project-quote">
-            <blockquote>
-              &laquo;При корректном вводе данных НДФЛ рассчитывается верно, не&nbsp;требуется ручных корректировок. Формирование ведомостей ускорилось в&nbsp;4&nbsp;раза.&raquo;
-            </blockquote>
-            <p class="project-quote-author">Кузьмина О.С., главный бухгалтер МУП &laquo;Астрводоканал&raquo;</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECT 2: Объединение баз -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="project-card">
-          <div class="project-media">
-            <img src="images/projects/photo-project-merge-team.webp" alt="Команда обсуждает документы и согласует проект объединения нескольких баз 1С" loading="lazy" decoding="async">
-          </div>
-          <div class="project-header">
-            <span class="case-tag">Объединение баз</span>
-            <h2 class="project-title">Объединение баз 158 организаций</h2>
-            <p class="project-client">Крупные холдинги и группы компаний</p>
-          </div>
-          <div class="project-body">
-            <div class="project-col">
-              <h4>Ситуация</h4>
-              <p>Клиенты из&nbsp;разных отраслей обращались с&nbsp;типовой задачей: несколько юридических лиц ведутся в&nbsp;разных базах 1С, данные не&nbsp;сходятся, консолидированная отчётность формируется вручную.</p>
-            </div>
-            <div class="project-col">
-              <h4>Что сделали</h4>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Результат</h4>
               <ul>
-                <li>Разработали методологию объединения с сохранением истории</li>
-                <li>Устранили дубли в справочниках</li>
-                <li>Привели аналитику к единому формату</li>
-                <li>Перенесли документы с сохранением проводок</li>
-                <li>Проверили корректность остатков</li>
+                <li>Учтены все аудиторские замечания.</li>
+                <li>База приведена к единому формату, готова к переходу.</li>
+                <li>Новый главбух получил чистую, прозрачную систему и инструкции.</li>
+                <li>Клиент успешно прошёл проверку и подготовился к миграции.</li>
               </ul>
             </div>
           </div>
-          <div class="project-results">
-            <div class="project-result">
-              <strong>158</strong>
-              <span>организаций объединено</span>
-            </div>
-            <div class="project-result">
-              <strong>от 4 дней</strong>
-              <span>минимальный срок</span>
-            </div>
-            <div class="project-result">
-              <strong>в 3 раза</strong>
-              <span>быстрее консолидация</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <!-- PROJECT 3: Астраханьгазсервис -->
-    <section class="section">
-      <div class="container">
-        <div class="project-card">
+        <article class="project-card" id="case-zup-2000">
           <div class="project-media">
-            <img src="images/projects/photo-project-zup-support.webp" alt="Долгосрочное сопровождение клиента по расчёту зарплаты в 1С" loading="lazy" decoding="async">
+            <img src="images/projects/photo-project-zup-office.webp" alt="Переход на ЗУП для 2000 сотрудников" loading="lazy" decoding="async">
           </div>
           <div class="project-header">
-            <span class="case-tag">ЗУП</span>
-            <h2 class="project-title">20 лет безупречного расчёта зарплаты</h2>
-            <p class="project-client">АО &laquo;Астраханьгазсервис&raquo;, ~600 сотрудников</p>
+            <h2 class="project-title">2. Переход на ЗУП для 2000 сотрудников</h2>
+            <p class="project-client">Переход с устаревшей УПП на 1С:Зарплата и управление персоналом</p>
           </div>
-          <div class="project-body">
-            <div class="project-col">
-              <h4>Ситуация</h4>
-              <p>Компания работала с&nbsp;АверсПро с&nbsp;2000&nbsp;года. Требовались последовательные переходы между версиями ЗУП (7.7 &rarr; 2.5 &rarr; 3.0) с&nbsp;сохранением всей истории расчётов для ~600&nbsp;сотрудников с&nbsp;более чем 100&nbsp;видами начислений.</p>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Задача</h4>
+              <p>Перейти с УПП на современную 1С:Зарплата и управление персоналом (ЗУП) для 2000 сотрудников.</p>
             </div>
-            <div class="project-col">
+            <div class="text-card">
+              <h4>Сложности</h4>
+              <p>Разрозненные данные, ручные корректировки регистров, ошибки в НДФЛ, долгий расчёт зарплаты, нестыковка расчётных листков, отсутствие штатного расписания в УПП и его необходимость в ЗУП.</p>
+            </div>
+          </div>
+          <div class="text-card">
+            <h4>Что сделали</h4>
+            <ul>
+              <li>Проанализировали бизнес-процессы и требования (главбух, отдел кадров, расчётная часть, ПЭО, АСУ).</li>
+              <li>Настроили шаблоны и показатели расчёта через типовой функционал 1С, убрали задублированные произвольные показатели.</li>
+              <li>Перенесли исторические данные (начисления, средний заработок, налоги, начальную штатную расстановку). Догрузили воинский учёт (вёлся в другой базе), программным способом создали штатное расписание и увязали его с начальной штатной расстановкой.</li>
+              <li>Провели разъяснительную работу с руководством, убедили, что табельщики должны работать сразу в 1С, а не в Excel.</li>
+              <li>Обучили пользователей, запустили интеграцию с 1С:Бухгалтерия КОРП.</li>
+            </ul>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Результат</h4>
+              <ul>
+                <li>Расчёт зарплаты ускорился в 5 раз.</li>
+                <li>Ведомости готовятся в 4 раза быстрее.</li>
+                <li>Перерасчёты и доначисления снизились в 10 раз.</li>
+                <li>НДФЛ и отчётность (6-НДФЛ, РСВ, ЕФС-1) формируются корректно.</li>
+                <li>Экономия времени направлена на контроль налогов на фоне изменений законодательства.</li>
+                <li>Расчетные листки перестали содержать математические ошибки.</li>
+              </ul>
+            </div>
+            <div class="project-quote">
+              <blockquote>«При корректном вводе данных НДФЛ рассчитывается верно, не требуется ручных корректировок регистров. Нет расхождений между декларацией по 6-НДФЛ и справками 2-НДФЛ. Налоговая отчётность РСВ, ЕФС-1 формируется корректно. Снижение времени расчёта зарплаты в 5 раз, подготовки ведомостей — в 4 раза, перерасчётов за прошлый период — в 10 раз».</blockquote>
+              <p class="project-quote-author">— Кузьмина Ольга Сергеевна, главный бухгалтер МУП «Астрводоканал»</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="case-zup-2-months">
+          <div class="project-media">
+            <img src="images/projects/photo-project-zup-support.webp" alt="Срочный переход на ЗУП за 2 месяца без остановки учёта" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <h2 class="project-title">3. Срочный переход на ЗУП за 2 месяца без остановки учёта</h2>
+            <p class="project-client">Производственное предприятие из 4 организаций, 400 сотрудников</p>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Задача</h4>
+              <p>Срочный переход с УПП на 1С:ЗУП для 400 сотрудников.</p>
+            </div>
+            <div class="text-card">
+              <h4>Сложности</h4>
+              <p>Сжатые сроки, необходимость осуществить переход с минимальным бюджетом и с максимальным вовлечением персонала клиента в процесс.</p>
+            </div>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
               <h4>Что сделали</h4>
               <ul>
-                <li>Запустили расчёт зарплаты в 2000 году</li>
-                <li>Провели переходы 7.7 &rarr; 2.5 &rarr; 3.0</li>
-                <li>Настроили 100+ видов начислений</li>
-                <li>Настроили обмены с бухгалтерией</li>
-                <li>Обеспечили сопровождение 20+ лет</li>
+                <li>Организовали плотное обучение и поддержку отдела автоматизации, руководившего переходом.</li>
+                <li>Провели перенос данных (начисления, средний заработок, начальная штатная расстановка).</li>
+                <li>Настроили расчёт зарплаты под специфику предприятия.</li>
+                <li>Выявили и устранили регулярные ошибки в учете.</li>
+                <li>Запустили систему в эксплуатацию в короткий срок.</li>
+              </ul>
+            </div>
+            <div class="text-card">
+              <h4>Результат</h4>
+              <ul>
+                <li>Переход завершён без сбоев в отчётности.</li>
+                <li>Персонал клиента самостоятельно работает в новой системе.</li>
+                <li>За счет параллельного ведения учета найдены и устранены ошибки в учете.</li>
               </ul>
             </div>
           </div>
-          <div class="project-results">
-            <div class="project-result">
-              <strong>20+ лет</strong>
-              <span>непрерывного сопровождения</span>
-            </div>
-            <div class="project-result">
-              <strong>100+</strong>
-              <span>видов начислений</span>
-            </div>
-            <div class="project-result">
-              <strong>0</strong>
-              <span>нарушений при проверках</span>
-            </div>
-          </div>
-          <div class="project-quote">
-            <blockquote>
-              &laquo;Контролирующими органами не&nbsp;выявляется нарушений ведения учёта. Все переходы между версиями выполнены без потери данных.&raquo;
-            </blockquote>
-            <p class="project-quote-author">Антонова Т.М., главный бухгалтер АО &laquo;Астраханьгазсервис&raquo;</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <!-- PROJECT 4: Восстановление учёта -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="project-card">
+        <article class="project-card" id="case-gas-20-years">
           <div class="project-media">
-            <img src="images/projects/photo-project-audit.webp" alt="Аудит документов и восстановление бухгалтерского учёта перед переходом на ERP" loading="lazy" decoding="async">
+            <img src="images/projects/photo-case-zup-payroll.webp" alt="20 лет безупречного расчёта зарплаты для газовой компании" loading="lazy" decoding="async">
           </div>
           <div class="project-header">
-            <span class="case-tag">Восстановление учёта</span>
-            <h2 class="project-title">Восстановление учёта по аудиторскому заключению</h2>
-            <p class="project-client">Подготовка базы к переходу на ERP</p>
+            <h2 class="project-title">4. 20 лет безупречного расчёта зарплаты для газовой компании</h2>
+            <p class="project-client">Последовательный переход 7.7 → 2.5 → 3.0</p>
           </div>
-          <div class="project-body">
-            <div class="project-col">
-              <h4>Ситуация</h4>
-              <p>После смены главного бухгалтера потребовалось привести учёт в&nbsp;соответствие с&nbsp;аудиторским заключением и&nbsp;подготовить базу к&nbsp;переходу на&nbsp;ERP.</p>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Задача</h4>
+              <p>Переход с устаревших версий ЗУП (7.7 → 2.5 → 3.0) и многолетнее сопровождение.</p>
             </div>
-            <div class="project-col">
-              <h4>Что сделали</h4>
+            <div class="text-card">
+              <h4>Сложности</h4>
+              <p>В 1999г познакомились с клиентом, когда компания, которая его сопровождала, не смогла настроить и запустить 7.7. Позже нашей фирмой были осуществлены неоднократные переходы между версиями, настройки интеграций с бухгалтерией, контроль налогов. На моменты перехода количество сотрудников было порядка 600 человек, 100+ видов начислений.</p>
+            </div>
+          </div>
+          <div class="text-card">
+            <h4>Что сделали</h4>
+            <ul>
+              <li>В 2000 году запустили «Зарплату и Кадры» на базе 1С:Предприятие 7.7 в кратчайшие сроки после отказа конкурента.</li>
+              <li>Позже провели последовательные переходы на ЗУП 2.5, а затем на ЗУП 3.0.</li>
+              <li>Настроили обмен: сначала самописный обмен с 1С:Бухгалтерия 4.5 (7.7), затем типовой — с 1С:Бухгалтерия 8.</li>
+              <li>Обучили персонал.</li>
+              <li>Ведём поддержку с 2000 года.</li>
+              <li>100+ начислений реализовано с помощью типового функционала.</li>
+            </ul>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Результат</h4>
               <ul>
-                <li>Проанализировали расхождения по счетам (60, 62, 76, 91)</li>
-                <li>Настроили учётную политику</li>
-                <li>Исправили закрытие периодов</li>
-                <li>Устранили дубли, восстановили аналитику</li>
-                <li>Подготовили базу к переносу на ERP</li>
+                <li>Расчёты зарплаты и отчётность без нарушений (кроме человеческих факторов).</li>
+                <li>Контролирующие органы не выявляют системных ошибок.</li>
+                <li>Клиент остаётся с нами более 20 лет.</li>
+              </ul>
+            </div>
+            <div class="project-quote">
+              <blockquote>«На протяжении длительного времени контролирующими органами не выявляется нарушений ведения учёта (за исключением человеческих факторов). Все проблемы, которые возникают с налогами, взносами, переходами, решаются максимально быстро и с максимальным использованием типовых возможностей конфигураций».</blockquote>
+              <p class="project-quote-author">— Антонова Татьяна Михайловна, главный бухгалтер АО «Астраханьгазсервис»</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="case-gas-6000">
+          <div class="project-media">
+            <img src="images/projects/photo-project-merge-analytics.webp" alt="6000 объектов газовых сетей — единый учёт за год" loading="lazy" decoding="async">
+          </div>
+          <div class="project-header">
+            <h2 class="project-title">5. 6000 объектов газовых сетей — единый учёт за год</h2>
+            <p class="project-client">Замена 1С:Бухгалтерский учёт 4.5 (на базе 1С:Предприятия 7.7. на 1С:Бухгалтерия 8 ПРОФ</p>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Задача</h4>
+              <p>Заменить устаревшую 1С:Бухгалтерский учёт 4.5 (последние 5 лет не обновлялась) на современную 1С:Бухгалтерия 8 ПРОФ с сохранением истории учета по объектам ОС и отраслевой специфики.</p>
+            </div>
+            <div class="text-card">
+              <h4>Сложности</h4>
+              <ul>
+                <li>Около 6000 объектов газораспределительных сетей с разрозненными алгоритмами учёта, с необходимостью хранения истории модернизации каждого объекта.</li>
+                <li>Регламентные отчёты по НДС не формировались — каждый квартал требовался программист.</li>
+                <li>Большое количество доработок в старой системе, часть из которых уже встроена в типовую, а часть потеряла актуальность.</li>
               </ul>
             </div>
           </div>
-          <div class="project-results">
-            <div class="project-result">
-              <strong>4 месяца</strong>
-              <span>от начала до готовности к ERP</span>
+          <div class="text-card">
+            <h4>Что сделали</h4>
+            <ul>
+              <li>Привели нормативно-справочную информацию к единому формату.</li>
+              <li>Проанализировали бизнес-процессы и настроили 1С:Бухгалтерию 8 под отрасль.</li>
+              <li>Перенесли остатки на 1 января 2024 года, настроили постоянный перенос документов из старой базы для параллельного учета в течение 2024г.</li>
+              <li>Разработали недостающие внешние печатные формы и обработки.</li>
+              <li>Обучили пользователей, составили инструкции.</li>
+            </ul>
+          </div>
+          <div class="project-block">
+            <div class="text-card">
+              <h4>Результат</h4>
+              <ul>
+                <li>Переход завершён в начале 2025 года.</li>
+                <li>НДС-декларация формируется автоматически.</li>
+                <li>Единый учёт основных средств, материалов, договоров, взаиморасчётов.</li>
+                <li>Интеграция с 1С:Зарплата и управление персоналом.</li>
+                <li>Выявлены и устранены ошибки алгоритмов учета газовых объектов.</li>
+              </ul>
             </div>
-            <div class="project-result">
-              <strong>100%</strong>
-              <span>замечаний аудита устранено</span>
-            </div>
-            <div class="project-result">
-              <strong>0</strong>
-              <span>расхождений в остатках</span>
+            <div class="project-quote">
+              <blockquote>«Все проблемы решаются максимально быстро и с максимальным использованием типовых возможностей. Благодаря такому подходу настройка и запуск были осуществлены в запланированные сроки».</blockquote>
+              <p class="project-quote-author">— Антонова Татьяна Михайловна, главный бухгалтер АО «Астраханьгазсервис»</p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section">
+    <section class="section section-alt" id="merges-section">
       <div class="container">
-        <div class="cta-block">
-          <div class="cta-grid">
-            <div class="cta-copy">
-              <span class="cta-eyebrow">Разбор проекта</span>
-              <h2>Нужен похожий проект?</h2>
-              <p>Опишете задачу, а мы предложим рабочий сценарий настройки, переноса или объединения баз с понятными этапами и сроками.</p>
-            </div>
-            <div class="cta-actions">
-              <a href="contacts.html" class="btn btn-white btn-lg">Связаться</a>
-              <a href="tel:+79275696628" class="cta-phone">
-                <span class="cta-phone-label">Обсудить с консультантом</span>
-                <span class="cta-phone-value">+7 (927) 569-66-28</span>
-              </a>
-            </div>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Также наша команда успешно объединяла:</h2>
         </div>
+        <ul class="article-list">
+          <li>38 юрлиц из 8 баз → одна. Устранили дубли контрагентов, разную аналитику счетов, битые ссылки, неверные связки. Консолидированная отчётность стала формироваться в 3 раза быстрее.</li>
+          <li>3 базы за 4 дня (включая выходные). Клиент обратился в четверг — в понедельник уже работал в единой базе 1С:Бухгалтерия.</li>
+          <li>Две нетиповые базы «Авто-Альфа». Объединили два автосалона с автосервисами после реорганизации без потери истории.</li>
+          <li>12 баз 1С:Зарплата и управление персоналом государственного учреждения после реорганизации.</li>
+          <li>В ЗУП с 50+ юрлицами добавили еще одну при покупке компании. Приведение к единому формату начислений, тестовое объединение и объединение рабочих баз за 1 месяц.</li>
+          <li>Три разрозненные базы для собственника. Он хотел видеть все направления в одной базе, сделали за 6 дней.</li>
+        </ul>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div class="footer-logo">
             <span class="logo-mark">
-              <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+              <img src="images/brand/logo.webp" alt="Логотип Аверс-Про" class="logo-image">
             </span>
           </div>
-          <p class="footer-desc">Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.</p>
+          <p class="footer-desc">«Аверс-Про» — партнёр фирмы «1С» с 1999 года.</p>
           <div class="footer-socials">
             <a href="#" class="footer-social" aria-label="Telegram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
@@ -326,29 +347,29 @@
           </div>
         </div>
         <div class="footer-nav">
-          <h4 class="footer-heading">Навигация</h4>
+          <h4 class="footer-heading">Меню</h4>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="blog.html">Блог</a></li>
+            <li><a href="projects.html">Примеры нашей работы</a></li>
+            <li><a href="blog.html">Блог / статьи</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
         <div class="footer-services">
-          <h4 class="footer-heading">Услуги</h4>
+          <h4 class="footer-heading">Помощь с 1С</h4>
           <ul>
-            <li><a href="services-zup.html">1С:ЗУП</a></li>
-            <li><a href="services-buh.html">1С:Бухгалтерия</a></li>
-            <li><a href="services-gkh-nko.html">ЖКХ и НКО</a></li>
+            <li><a href="services-its.html">1С:Обновление и сервисы (1С:ИТС)</a></li>
+            <li><a href="services-zup.html">1С:Зарплата и управление персоналом (ЗУП)</a></li>
+            <li><a href="services-buh.html">1С:Бухгалтерия предприятия</a></li>
+            <li><a href="services-gkh-nko.html">1С для организаций ЖКХ</a></li>
             <li><a href="services-other.html">Другие решения</a></li>
           </ul>
         </div>
         <div class="footer-contacts">
-          <h4 class="footer-heading">Контакты</h4>
-          <p><a href="tel:+79275696628">+7 (927) 569-66-28</a></p>
+          <h4 class="footer-heading">Быстрые контакты</h4>
+          <p><a href="tel:+79275696628">+79275696628</a></p>
           <p><a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a></p>
-          <p>Москва, ул. Амурская, д.2, к.1, пом.555.</p>
-          <p>Пн&ndash;Пт: 09:00 &ndash; 17:00</p>
+          <p>г.Москва, ул.Амурская, д.2, к.1, пом.555</p>
         </div>
       </div>
       <div class="footer-bottom">
