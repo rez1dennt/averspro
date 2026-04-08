@@ -712,6 +712,19 @@ p:last-child { margin-bottom:0; }
   background-repeat:no-repeat; background-position:right 14px center; padding-right:40px;
 }
 .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.form-note {
+  margin:0 0 18px;
+  font-size:.88rem;
+  line-height:1.6;
+  color:var(--gray-500);
+}
+.form-note a {
+  color:var(--blue-600);
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.form-note a:hover { color:var(--blue-700); }
 .form-disclaimer { font-size:.78rem; color:var(--gray-400); margin-top:10px; text-align:center; }
 .form-check {
   display:grid;

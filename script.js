@@ -177,7 +177,6 @@
 
   // --- Form submit ---
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   const getFieldContainer = field => field.closest('.form-group, .form-check');
   const normalizeFieldValue = field => {
     const nextValue = field.value.trim().replace(/\s+/g, ' ');
@@ -302,6 +301,7 @@
     };
 
     if (form.classList.contains('subscribe-form')) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
       const subscribeEmail = form.querySelector('input[type="email"]');
       const emailValue = subscribeEmail ? normalizeFieldValue(subscribeEmail).toLowerCase() : '';
 
@@ -316,10 +316,9 @@
 
     const nameInput = form.querySelector('input[name="name"]');
     const phoneInput = form.querySelector('input[name="phone"]');
-    const emailInput = form.querySelector('input[name="email"]');
+    const contactMethodSelect = form.querySelector('select[name="contact_method"]');
     const serviceSelect = form.querySelector('select[name="service"]');
     const messageInput = form.querySelector('textarea[name="message"]');
-    const consentInput = form.querySelector('input[name="consent"]');
 
     if (nameInput) {
       const nameValue = normalizeFieldValue(nameInput);
@@ -334,24 +333,14 @@
     if (phoneInput) {
       if (phoneDigits) phoneInput.value = formatPhoneValue(phoneDigits);
       if (phoneInput.hasAttribute('required') && phoneDigits.length !== 10) {
-        invalidate(phoneInput, 'Укажите телефон полностью, чтобы мы могли созвониться по вашей задаче.');
+        invalidate(phoneInput, 'Укажите телефон полностью, чтобы мы могли связаться с вами по заявке.');
       } else if (phoneDigits && phoneDigits.length !== 10) {
         invalidate(phoneInput, 'Проверьте телефон: нужен полный номер в формате +7 (___) ___-__-__.');
       }
     }
 
-    let emailValue = '';
-    if (emailInput) {
-      emailValue = normalizeFieldValue(emailInput).toLowerCase();
-      if (emailValue) emailInput.value = emailValue;
-      if (emailValue && !emailPattern.test(emailValue)) {
-        invalidate(emailInput, 'Проверьте email: мы используем его для ответа по вашей заявке.');
-      }
-    }
-
-    if (form.classList.contains('contact-form') && !phoneDigits && !emailValue) {
-      invalidate(phoneInput, 'Оставьте телефон или email, чтобы обсудить вашу задачу по 1С.');
-      invalidate(emailInput, 'Нужен хотя бы один способ связи: телефон или email.');
+    if (contactMethodSelect && !contactMethodSelect.value) {
+      invalidate(contactMethodSelect, 'Выберите удобный способ связи, чтобы мы ответили в нужном формате.');
     }
 
     if (serviceSelect && !serviceSelect.value) {
@@ -367,10 +356,6 @@
       }
     }
 
-    if (consentInput && !consentInput.checked) {
-      invalidate(consentInput, 'Подтвердите согласие на обработку данных, чтобы мы могли принять заявку.');
-    }
-
     return { valid: !firstInvalidField, firstInvalidField };
   };
 
@@ -384,13 +369,6 @@
         clearFormStatus(form);
       });
     });
-
-    const phoneInput = form.querySelector('input[name="phone"]');
-    const emailInput = form.querySelector('input[name="email"]');
-    if (phoneInput && emailInput) {
-      phoneInput.addEventListener('input', () => clearFieldError(emailInput));
-      emailInput.addEventListener('input', () => clearFieldError(phoneInput));
-    }
 
     form.addEventListener('submit', e => {
       e.preventDefault();
