@@ -231,6 +231,15 @@
     form.querySelectorAll('input, textarea, select').forEach(clearFieldError);
   };
 
+  const getLeadDownloadNode = form => {
+    return (
+      form.querySelector('.lead-download') ||
+      form.closest('.lead-block')?.querySelector('.lead-download') ||
+      form.parentElement?.querySelector('.lead-download') ||
+      null
+    );
+  };
+
   const getFormStatusNode = form => {
     let status = form.querySelector('.form-status');
     if (status) return status;
@@ -239,11 +248,13 @@
     status.className = 'form-status';
     status.setAttribute('aria-live', 'polite');
 
-    const leadDownload = form.querySelector('.lead-download');
+    const leadDownload = getLeadDownloadNode(form);
     const submitButton = form.querySelector('button[type="submit"]');
 
-    if (leadDownload) {
+    if (leadDownload && form.contains(leadDownload)) {
       form.insertBefore(status, leadDownload);
+    } else if (leadDownload?.parentElement) {
+      leadDownload.parentElement.insertBefore(status, leadDownload);
     } else if (submitButton) {
       submitButton.insertAdjacentElement('afterend', status);
     } else {
@@ -397,7 +408,7 @@
 
         // Lead-magnet: show download button
         if (form.hasAttribute('data-lead-magnet')) {
-          const dl = form.querySelector('.lead-download');
+          const dl = getLeadDownloadNode(form);
           if (dl) dl.classList.remove('hidden');
         }
 

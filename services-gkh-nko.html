@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1С для ЖКХ и НКО — АверсПро</title>
-  <meta name="description" content="Настройка и поддержка 1С для ЖКХ (управляющие компании, ТСЖ) и некоммерческих организаций. Учёт расчётов с населением, целевых средств, грантов. АверсПро — с 1999 года.">
+  <title>1С для организаций ЖКХ — Аверс-Про</title>
+  <meta name="description" content="1С для организаций ЖКХ. Поможем настроить учёт расчетов с населением, субсидий и коммунальных услуг в управляющих компаниях (УК) и ТСЖ.">
   <link rel="shortcut icon" href="images/brand/logo.webp" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,11 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="АверсПро">
+      <a href="index.html" class="logo" aria-label="Аверс-Про">
         <span class="logo-mark">
-          <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+          <img src="images/brand/logo.webp" alt="Логотип Аверс-Про" class="logo-image">
         </span>
       </a>
       <nav class="main-nav">
@@ -29,9 +28,10 @@
               <svg class="nav-dropdown-icon" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
             </a>
             <div class="nav-dropdown">
-              <a href="services-zup.html">1С:Зарплата и управление персоналом</a>
-              <a href="services-buh.html">1С:Бухгалтерия и налоговый учёт</a>
-              <a href="services-gkh-nko.html">1С для ЖКХ и НКО</a>
+              <a href="services-its.html">1С:Обновление и сервисы (1С:ИТС)</a>
+              <a href="services-zup.html">1С:Зарплата и управление персоналом (ЗУП)</a>
+              <a href="services-buh.html">1С:Бухгалтерия предприятия</a>
+              <a href="services-gkh-nko.html">1С для организаций ЖКХ</a>
               <a href="services-other.html">Другие решения</a>
             </div>
           </li>
@@ -41,14 +41,16 @@
         </ul>
       </nav>
       <div class="header-right">
-        <a href="tel:+79275696628" class="header-phone">+7 (927) 569-66-28</a>
-        <a href="contacts.html" class="btn btn-red btn-sm">Оставить заявку</a>
+        <div class="header-meta">
+          <a href="tel:+79275696628" class="header-phone">+79275696628</a>
+          <span class="header-city">Москва и МО</span>
+        </div>
+        <a href="tel:+79275696628" class="btn btn-red btn-sm">Позвонить</a>
       </div>
       <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-inner">
       <ul class="mobile-nav-list">
@@ -58,9 +60,10 @@
             <svg width="14" height="14" viewBox="0 0 12 12" style="margin-left:4px;vertical-align:middle"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
           </button>
           <ul class="mobile-sub-list">
+            <li><a href="services-its.html" class="mobile-sub-link">1С:ИТС</a></li>
             <li><a href="services-zup.html" class="mobile-sub-link">1С:ЗУП</a></li>
-            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия</a></li>
-            <li><a href="services-gkh-nko.html" class="mobile-sub-link active">ЖКХ и НКО</a></li>
+            <li><a href="services-buh.html" class="mobile-sub-link">1С:Бухгалтерия предприятия</a></li>
+            <li><a href="services-gkh-nko.html" class="mobile-sub-link active">1С для организаций ЖКХ</a></li>
             <li><a href="services-other.html" class="mobile-sub-link">Другие решения</a></li>
           </ul>
         </li>
@@ -68,23 +71,22 @@
         <li><a href="blog.html" class="mobile-nav-link">Блог</a></li>
         <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
       </ul>
-      <a href="tel:+79275696628" class="mobile-phone">+7 (927) 569-66-28</a>
-      <a href="contacts.html" class="btn btn-red mobile-cta">Оставить заявку</a>
+      <a href="tel:+79275696628" class="mobile-phone">+79275696628</a>
+      <span class="mobile-city">Москва и МО</span>
+      <a href="tel:+79275696628" class="btn btn-red mobile-cta">Позвонить</a>
     </div>
   </div>
 
   <main>
 
-    <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="container">
-        <p class="page-hero-label">Услуги</p>
-        <h1 class="page-hero-title">1С для ЖКХ и&nbsp;НКО</h1>
-        <p class="page-hero-subtitle">Специализированные решения для управляющих компаний, ТСЖ, фондов, ассоциаций и&nbsp;некоммерческих организаций</p>
+        <p class="page-hero-label">Помощь с 1С</p>
+        <h1 class="page-hero-title">1С для организаций ЖКХ</h1>
+        <p class="page-hero-subtitle">Поможем настроить учёт расчетов с населением, субсидий и коммунальных услуг в управляющих компаниях (УК) и ТСЖ.</p>
       </div>
     </section>
 
-    <!-- ======= SECTION 1: ЖКХ ======= -->
     <section class="section">
       <div class="container">
         <div class="svc-detail-header">
@@ -92,208 +94,75 @@
             <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 42h36"/><rect x="14" y="18" width="20" height="24" rx="2"/><path d="M24 6l-16 12h32L24 6z"/><rect x="20" y="30" width="8" height="12"/></svg>
           </div>
           <div>
-            <h2 class="svc-detail-title">1С для организаций ЖКХ</h2>
-            <p class="svc-detail-lead">Учёт расчётов с&nbsp;населением, субсидий и&nbsp;коммунальных услуг в&nbsp;управляющих компаниях (УК) и&nbsp;ТСЖ. Настраиваем лицевые счета, тарифы, квитанции, загрузку оплат и&nbsp;обмены с&nbsp;бухгалтерией.</p>
+            <h2 class="svc-detail-title">Какие задачи решаем:</h2>
+            <p class="svc-detail-lead">Поможем настроить учёт расчетов с населением, субсидий и коммунальных услуг в управляющих компаниях (УК) и ТСЖ.</p>
           </div>
         </div>
         <div class="svc-detail-banner">
-          <img src="images/services/photo-banner-gkh.webp" alt="Современный жилой дом для автоматизации расчётов и учёта ЖКХ" loading="lazy" decoding="async">
-          <div class="svc-detail-banner-note">Лицевые счета, начисления, квитанции и обмены с бухгалтерией для УК и ТСЖ.</div>
+          <img src="images/services/photo-banner-gkh.webp" alt="1С для организаций ЖКХ" loading="lazy" decoding="async">
+          <div class="svc-detail-banner-note">в управляющих компаниях (УК) и ТСЖ.</div>
         </div>
-
-        <!-- KEY STATS -->
         <div class="svc-stats">
           <div class="svc-stat">
             <span class="svc-stat-num">26</span>
             <span class="svc-stat-label">управляющих компаний и ТСЖ</span>
           </div>
           <div class="svc-stat">
-            <span class="svc-stat-num">10 000</span>
-            <span class="svc-stat-label">абонентов — макс. масштаб</span>
+            <span class="svc-stat-num">1000 до 10000+</span>
+            <span class="svc-stat-label">количество абонентов</span>
           </div>
           <div class="svc-stat">
-            <span class="svc-stat-num">с 2012</span>
-            <span class="svc-stat-label">года работаем с ЖКХ</span>
-          </div>
-        </div>
-
-        <!-- FEATURES -->
-        <div class="svc-features">
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h4>Лицевые счета</h4>
-            <p>Настройка лицевых счетов, зависимых услуг, двухкомпонентных тарифов.</p>
-          </div>
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </div>
-            <h4>Квитанции и оплаты</h4>
-            <p>Индивидуальные формы квитанций, загрузка оплат, корректировка пересорта.</p>
-          </div>
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <h4>Отчёты и аналитика</h4>
-            <p>Формирование отчётов по начислениям, оплатам и задолженностям. Разделение учёта.</p>
-          </div>
-        </div>
-
-        <!-- ACCORDIONS -->
-        <div class="svc-accordions" style="margin-top:40px">
-          <div class="accordion" data-accordion>
-            <button class="accordion-trigger" data-accordion-trigger>
-              Какие задачи решаются
-              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
-            </button>
-            <div class="accordion-content" data-accordion-content>
-              <ul class="svc-list">
-                <li>Настройка лицевых счетов, зависимых услуг, двухкомпонентных тарифов, загрузки оплат, индивидуальных форм квитанций</li>
-                <li>Корректировка взаиморасчётов по пересорту между физлицами и поставщиками ресурсов</li>
-                <li>Формирование отчётов по начислениям, оплатам и задолженностям</li>
-                <li>Разделение учёта на учёт операций ЖКХ и бухгалтерский учёт, настройка обменов</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="accordion" data-accordion>
-            <button class="accordion-trigger" data-accordion-trigger>
-              Что вы получите
-              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
-            </button>
-            <div class="accordion-content" data-accordion-content>
-              <ul class="svc-list svc-list-check">
-                <li>Снижение времени на формирование квитанций и отчётов в 2 раза</li>
-                <li>Исключение ошибок при начислениях и оплатах</li>
-                <li>Прозрачный учёт задолженности населения и расчётов с поставщиками</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="accordion" data-accordion>
-            <button class="accordion-trigger" data-accordion-trigger>
-              Почему это надёжно
-              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
-            </button>
-            <div class="accordion-content" data-accordion-content>
-              <ul class="svc-list svc-list-check">
-                <li>Опыт работы с ЖКХ с 2012 года</li>
-                <li>На обслуживании 26 управляющих компаний и ТСЖ с количеством абонентов от 1000 до 10000</li>
-                <li>В штате — специалисты, знакомые с отраслевой спецификой</li>
-              </ul>
-            </div>
+            <span class="svc-stat-num">с 2012г.</span>
+            <span class="svc-stat-label">опыт работы с ЖКХ</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION DIVIDER -->
-    <div class="section-divider"><div class="container"><hr></div></div>
-
-    <!-- ======= SECTION 2: НКО ======= -->
-    <section class="section">
+    <section class="section section-alt">
       <div class="container">
-        <div class="svc-detail-header">
-          <div class="svc-detail-icon">
-            <svg width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="24" cy="24" r="18"/><path d="M24 14v20M16 20l8-6 8 6M16 28l8 6 8-6"/></svg>
-          </div>
-          <div>
-            <h2 class="svc-detail-title">1С для некоммерческих организаций (НКО)</h2>
-            <p class="svc-detail-lead">Учёт целевых средств, членских взносов и&nbsp;грантов в&nbsp;фондах, ассоциациях и&nbsp;автономных некоммерческих организациях. Раздельный учёт по&nbsp;видам деятельности.</p>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Что вы получите:</h2>
         </div>
-        <div class="svc-detail-banner">
-          <img src="images/services/photo-banner-nko.webp" alt="Рабочая встреча по настройке учёта целевых средств и грантов в НКО" loading="lazy" decoding="async">
-          <div class="svc-detail-banner-note">Гранты, членские взносы и целевые поступления с раздельным учётом по направлениям деятельности.</div>
-        </div>
-
-        <!-- KEY STATS -->
-        <div class="svc-stats">
-          <div class="svc-stat">
-            <span class="svc-stat-num">11</span>
-            <span class="svc-stat-label">некоммерческих организаций</span>
-          </div>
-          <div class="svc-stat">
-            <span class="svc-stat-num">40 ч</span>
-            <span class="svc-stat-label">экономии в месяц на распределении поступлений</span>
-          </div>
-          <div class="svc-stat">
-            <span class="svc-stat-num">с 2020</span>
-            <span class="svc-stat-label">года работаем с НКО</span>
-          </div>
-        </div>
-
-        <!-- FEATURES -->
-        <div class="svc-features">
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h4>Целевые поступления</h4>
-            <p>Гранты, субсидии, пожертвования &mdash; контроль использования по назначению.</p>
-          </div>
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
-            </div>
-            <h4>Раздельный учёт</h4>
-            <p>По видам деятельности: приносящая доход, уставная, целевая.</p>
-          </div>
-          <div class="svc-feature">
-            <div class="svc-feature-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </div>
-            <h4>Отчётность НКО</h4>
-            <p>Отчёт о целевом использовании средств, подготовка к аудиту, отчётность перед грантодателями.</p>
-          </div>
-        </div>
-
-        <!-- ACCORDIONS -->
-        <div class="svc-accordions" style="margin-top:40px">
+        <div class="svc-accordions">
           <div class="accordion" data-accordion>
             <button class="accordion-trigger" data-accordion-trigger>
-              Какие задачи решаются
+              Какие задачи решаем
               <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
             </button>
             <div class="accordion-content" data-accordion-content>
               <ul class="svc-list">
-                <li>Настройка раздельного учёта по видам деятельности (приносящая доход, уставная, целевая)</li>
-                <li>Учёт целевых поступлений (гранты, субсидии, пожертвования) с контролем использования по назначению</li>
-                <li>Формирование отчёта о целевом использовании средств</li>
-                <li>Настройка учёта членских и вступительных взносов</li>
-                <li>Помощь в закрытии периода и подготовке к аудиту</li>
+                <li>Настраиваем лицевые счета, зависимые услуги, двухкомпонентные тарифы, загрузки оплат, индивидуальные формы квитанций.</li>
+                <li>Научим корректировать взаиморасчёты по пересорту между физлицами и поставщиками ресурсов.</li>
+                <li>Покажем, как формировать отчёты по начислениям, оплатам и задолженностям (в том числе для ресурсоснабжающих организаций).</li>
+                <li>Отделим ЖКХ от бухгалтерского учета, либо настроим корректный обмен.</li>
               </ul>
             </div>
           </div>
-
           <div class="accordion" data-accordion>
             <button class="accordion-trigger" data-accordion-trigger>
               Что вы получите
               <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
             </button>
             <div class="accordion-content" data-accordion-content>
+              <p>Вам легче будет защищать тарифы в службе по тарифам и соблюдать требования жилищного кодекса за счет:</p>
               <ul class="svc-list svc-list-check">
-                <li>Исключение смешения целевых и предпринимательских доходов</li>
-                <li>Экономия до 40 часов в месяц на ручном распределении поступлений</li>
-                <li>Отчётность перед учредителями и грантодателями формируется автоматически</li>
-                <li>Полное соответствие требованиям законодательства об НКО</li>
+                <li>Снижения времени на формирование квитанций и отчётов в 2 раза.</li>
+                <li>Исключения ошибок при начислениях и оплатах, передаче данных.</li>
+                <li>Настройки прозрачного учёта задолженности населения и расчётов с поставщиками.</li>
               </ul>
             </div>
           </div>
-
           <div class="accordion" data-accordion>
             <button class="accordion-trigger" data-accordion-trigger>
-              Почему это надёжно
+              Почему это надёжно:
               <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5"/></svg>
             </button>
             <div class="accordion-content" data-accordion-content>
               <ul class="svc-list svc-list-check">
-                <li>Опыт работы с НКО с 2020 года</li>
-                <li>На обслуживании 11 некоммерческих организаций (церкви, ассоциации, учебные заведения)</li>
-                <li>В штате — специалисты по бухучёту в некоммерческом секторе</li>
+                <li>Опыт работы с ЖКХ с 2012г.</li>
+                <li>На обслуживании 26 управляющих компаний и ТСЖ. С количеством абонентов от 1000 до 10000+</li>
+                <li>В штате — специалисты, знакомые с отраслевой спецификой и требованиями ресурсоснабжающих организаций и опытом работы с Службой по тарифам.</li>
               </ul>
             </div>
           </div>
@@ -301,12 +170,11 @@
       </div>
     </section>
 
-    <!-- FORM WITH LEAD-MAGNET -->
     <section class="section section-alt">
       <div class="container">
         <div class="svc-form-grid">
           <div class="svc-form-info">
-            <h2>Нужна помощь с&nbsp;учётом в&nbsp;ЖКХ или&nbsp;НКО?</h2>
+            <h2>Нужна помощь с&nbsp;учётом в&nbsp;ЖКХ?</h2>
             <p>Расскажите о вашей задаче — мы оценим сроки и&nbsp;предложим решение. Первая консультация бесплатная.</p>
             <div class="lead-magnet">
               <div class="lead-magnet-icon">
@@ -315,7 +183,7 @@
               <p>Скачайте памятку по учёту в ЖКХ — бесплатно при заявке</p>
             </div>
             <div class="svc-form-contacts">
-              <a href="tel:+79275696628">+7 (927) 569-66-28</a>
+              <a href="tel:+79275696628">+79275696628</a>
               <a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a>
             </div>
           </div>
@@ -323,7 +191,7 @@
             <div class="form-card-header">
               <span class="form-card-kicker">Консультация по отраслевым решениям</span>
               <h3>Оставьте заявку</h3>
-              <p>Подскажем, как выстроить учёт в ЖКХ или НКО без ручных схем, дублирования и потери аналитики.</p>
+              <p>Подскажем, как выстроить учёт в ЖКХ без ручных схем, дублирования и потери аналитики.</p>
             </div>
             <div class="form-group">
               <label for="gkh-name">Имя</label>
@@ -348,12 +216,11 @@
               <label for="gkh-service">Услуга</label>
               <select id="gkh-service" name="service">
                 <option value="">Выберите услугу</option>
+                <option value="its">1С:ИТС</option>
                 <option value="zup">1С:ЗУП</option>
                 <option value="buh">1С:Бухгалтерия</option>
                 <option value="gkh">ЖКХ</option>
-                <option value="nko">НКО</option>
                 <option value="merge">Объединение баз</option>
-                <option value="migration">Перенос</option>
                 <option value="other">Другое</option>
               </select>
             </div>
@@ -363,12 +230,6 @@
             </div>
             <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy-policy.html">политикой конфиденциальности</a>.</p>
             <button type="submit" class="btn btn-red btn-full">Обсудить заявку</button>
-            <div class="lead-download hidden">
-              <a href="images/pamyatka-gkh.pdf" download class="btn btn-blue btn-full">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Скачать памятку (PDF)
-              </a>
-            </div>
           </form>
         </div>
       </div>
@@ -376,17 +237,16 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div class="footer-logo">
             <span class="logo-mark">
-              <img src="images/brand/logo.webp" alt="Логотип АверсПро" class="logo-image">
+              <img src="images/brand/logo.webp" alt="Логотип Аверс-Про" class="logo-image">
             </span>
           </div>
-          <p class="footer-desc">Настройка и поддержка 1С с 1999 года. Решаем сложные задачи для бизнеса.</p>
+          <p class="footer-desc">«Аверс-Про» — партнёр фирмы «1С» с 1999 года.</p>
           <div class="footer-socials">
             <a href="#" class="footer-social" aria-label="Telegram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
@@ -397,29 +257,29 @@
           </div>
         </div>
         <div class="footer-nav">
-          <h4 class="footer-heading">Навигация</h4>
+          <h4 class="footer-heading">Меню</h4>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="blog.html">Блог</a></li>
+            <li><a href="projects.html">Примеры нашей работы</a></li>
+            <li><a href="blog.html">Блог / статьи</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
         <div class="footer-services">
-          <h4 class="footer-heading">Услуги</h4>
+          <h4 class="footer-heading">Помощь с 1С</h4>
           <ul>
-            <li><a href="services-zup.html">1С:ЗУП</a></li>
-            <li><a href="services-buh.html">1С:Бухгалтерия</a></li>
-            <li><a href="services-gkh-nko.html">ЖКХ и НКО</a></li>
+            <li><a href="services-its.html">1С:Обновление и сервисы (1С:ИТС)</a></li>
+            <li><a href="services-zup.html">1С:Зарплата и управление персоналом (ЗУП)</a></li>
+            <li><a href="services-buh.html">1С:Бухгалтерия предприятия</a></li>
+            <li><a href="services-gkh-nko.html">1С для организаций ЖКХ</a></li>
             <li><a href="services-other.html">Другие решения</a></li>
           </ul>
         </div>
         <div class="footer-contacts">
-          <h4 class="footer-heading">Контакты</h4>
-          <p><a href="tel:+79275696628">+7 (927) 569-66-28</a></p>
+          <h4 class="footer-heading">Быстрые контакты</h4>
+          <p><a href="tel:+79275696628">+79275696628</a></p>
           <p><a href="mailto:info@avers-pro.ru">info@avers-pro.ru</a></p>
-          <p>Москва, ул. Амурская, д.2, к.1, пом.555.</p>
-          <p>Пн&ndash;Пт: 09:00 &ndash; 17:00</p>
+          <p>г.Москва, ул.Амурская, д.2, к.1, пом.555</p>
         </div>
       </div>
       <div class="footer-bottom">
