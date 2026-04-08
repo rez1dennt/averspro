@@ -238,18 +238,37 @@
               <label for="buh-name">Имя</label>
               <input type="text" id="buh-name" name="name" required placeholder="Ваше имя">
             </div>
-            <div class="form-group">
-              <label for="buh-phone">Телефон</label>
-              <input type="tel" id="buh-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="buh-phone">Телефон</label>
+                <input type="tel" id="buh-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group">
+                <label for="buh-contact-method">Как с вами связаться</label>
+                <select id="buh-contact-method" name="contact_method" required>
+                  <option value="">Выберите способ связи</option>
+                  <option value="call">Позвонить</option>
+                  <option value="max">Написать в MAX</option>
+                  <option value="telegram">Написать в Telegram</option>
+                </select>
+              </div>
             </div>
             <div class="form-group">
-              <label for="buh-contact-method">Как с вами связаться</label>
-              <select id="buh-contact-method" name="contact_method" required>
-                <option value="">Выберите способ связи</option>
-                <option value="call">Позвонить</option>
-                <option value="max">Написать в MAX</option>
-                <option value="telegram">Написать в Telegram</option>
+              <label for="buh-service">Услуга</label>
+              <select id="buh-service" name="service">
+                <option value="">Выберите услугу</option>
+                <option value="zup">1С:ЗУП</option>
+                <option value="buh">1С:Бухгалтерия</option>
+                <option value="gkh">ЖКХ</option>
+                <option value="nko">НКО</option>
+                <option value="merge">Объединение баз</option>
+                <option value="migration">Перенос</option>
+                <option value="other">Другое</option>
               </select>
+            </div>
+            <div class="form-group">
+              <label for="buh-message">Сообщение</label>
+              <textarea id="buh-message" name="message" rows="4" placeholder="Опишите вашу задачу"></textarea>
             </div>
             <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy-policy.html">политикой конфиденциальности</a>.</p>
             <button type="submit" class="btn btn-red btn-full">Обсудить заявку</button>

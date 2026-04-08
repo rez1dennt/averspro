@@ -91,15 +91,15 @@
             <!-- Trust strip under buttons -->
             <div class="hero-trust">
               <div class="hero-trust-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-900)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 <span>Сертифицированные специалисты</span>
               </div>
               <div class="hero-trust-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-900)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 <span>Типовые решения без доработок</span>
               </div>
               <div class="hero-trust-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-500)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-900)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 <span>Клиенты с нами более 20 лет</span>
               </div>
             </div>
@@ -338,18 +338,37 @@
               <label for="lead-name">Имя</label>
               <input type="text" id="lead-name" name="name" required placeholder="Ваше имя">
             </div>
-            <div class="form-group">
-              <label for="lead-phone">Телефон</label>
-              <input type="tel" id="lead-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-phone">Телефон</label>
+                <input type="tel" id="lead-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group">
+                <label for="lead-contact-method">Как с вами связаться</label>
+                <select id="lead-contact-method" name="contact_method" required>
+                  <option value="">Выберите способ связи</option>
+                  <option value="call">Позвонить</option>
+                  <option value="max">Написать в MAX</option>
+                  <option value="telegram">Написать в Telegram</option>
+                </select>
+              </div>
             </div>
             <div class="form-group">
-              <label for="lead-contact-method">Как с вами связаться</label>
-              <select id="lead-contact-method" name="contact_method" required>
-                <option value="">Выберите способ связи</option>
-                <option value="call">Позвонить</option>
-                <option value="max">Написать в MAX</option>
-                <option value="telegram">Написать в Telegram</option>
+              <label for="lead-service">Услуга</label>
+              <select id="lead-service" name="service">
+                <option value="">Выберите услугу</option>
+                <option value="zup">1С:ЗУП</option>
+                <option value="buh">1С:Бухгалтерия</option>
+                <option value="gkh">ЖКХ</option>
+                <option value="nko">НКО</option>
+                <option value="merge">Объединение баз</option>
+                <option value="migration">Перенос</option>
+                <option value="other">Другое</option>
               </select>
+            </div>
+            <div class="form-group">
+              <label for="lead-message">Сообщение</label>
+              <textarea id="lead-message" name="message" rows="4" placeholder="Опишите вашу задачу"></textarea>
             </div>
             <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy-policy.html">политикой конфиденциальности</a>.</p>
             <button type="submit" class="btn btn-red btn-full">Обсудить заявку</button>
