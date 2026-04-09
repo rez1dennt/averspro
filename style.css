@@ -1242,6 +1242,30 @@ p:last-child { margin-bottom:0; }
 .blog-card-classic .blog-read-btn {
   min-width:90px;
 }
+
+/* ============================================
+   БАЙКИ — вариант карточки
+   ============================================ */
+.blog-card-bayky .blog-card-tag {
+  background:#fff8e6; color:#a06000;
+}
+.blog-card-bayky .bayky-text {
+  margin-left:22px; margin-right:22px; margin-bottom:20px;
+}
+.blog-card-bayky .bayky-text p {
+  font-size:.88rem; color:var(--gray-600); line-height:1.75;
+  min-height:0; margin-bottom:8px; margin-left:0; margin-right:0;
+}
+.blog-card-bayky .bayky-text p:last-child { margin-bottom:0; }
+.blog-card-bayky .bayky-text .bayky-meta {
+  font-style:italic; color:var(--gray-400); margin-bottom:10px;
+}
+.bayky-inline-img {
+  margin:4px 22px 20px; border-radius:12px;
+  overflow:hidden; border:1px solid var(--border);
+}
+.bayky-inline-img img { width:100%; height:auto; display:block; }
+
 .text-card,
 .story-card,
 .placeholder-card {
