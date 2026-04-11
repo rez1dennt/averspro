@@ -875,6 +875,10 @@ p:last-child { margin-bottom:0; }
 .svc-list-check li::before {
   width:8px; height:8px; border-radius:2px; background:var(--blue-900); opacity:.7; top:9px;
 }
+.svc-list-sub { margin-top:8px; }
+.svc-list-sub li::before {
+  background:transparent; border:1.5px solid var(--blue-900);
+}
 
 .section-divider { padding:0; }
 .section-divider hr { border:none; border-top:1px solid var(--border); margin:0; }
